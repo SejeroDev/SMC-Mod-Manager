@@ -1,0 +1,60 @@
+{
+	"name": "forest",
+	"plugin-id": "Sprite",
+	"sid": 168904069335260,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1070,
+						"height": 547,
+						"originX": 0.6177570093457944,
+						"originY": 0.44972577696526506,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2585639,
+						"collisionPoly": {
+							"points": [
+								0.12710280373831775,
+								0.0018281535648994385,
+								0.4261682242990654,
+								0.025594149908592323,
+								0.48598130841121495,
+								0.038391224862888484,
+								0.8121495327102803,
+								0.226691042047532,
+								0.997196261682243,
+								0.5447897623400365,
+								0.9990654205607477,
+								0.9981718464351006,
+								0.16074766355140185,
+								0.9981718464351006,
+								0.0009345794392523365,
+								0.09872029250457039,
+								0.02523364485981307,
+								0.04204753199268738
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 828545753458487,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

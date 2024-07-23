@@ -1,0 +1,27 @@
+{
+	"name": "Particle_Leaf",
+	"plugin-id": "Particles",
+	"sid": 986766071910383,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 184994348239251
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 7,
+		"height": 9,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7019050,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

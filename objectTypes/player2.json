@@ -1,0 +1,195 @@
+{
+	"name": "player2",
+	"plugin-id": "Sprite",
+	"sid": 349051723929411,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "jump",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 131602838933087
+		},
+		{
+			"name": "State",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 381577122874452
+		},
+		{
+			"name": "Attack",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 602378497162665
+		},
+		{
+			"name": "Charge",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 129534294552693
+		},
+		{
+			"name": "lastdir",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 543523843420177
+		},
+		{
+			"name": "per",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 167918723656635
+		},
+		{
+			"name": "BULLET",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 984500798544863
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 429897965080100
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 357674844014313
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8315838,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 789233460813942,
+				"name": "stand",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1932378,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 997606823651529,
+				"name": "jump",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2911445,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 313335852942061,
+				"name": "jump2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6857633,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 893758931277936,
+				"name": "upb",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4424162,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 457166275117491,
+				"name": "run",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

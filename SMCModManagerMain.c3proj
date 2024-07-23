@@ -1,0 +1,2369 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 39700,
+	"name": "Super Momos Crushers",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Matriz",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Navegador",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Camera3D",
+			"name": "Cámara 3D",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Flowchart",
+			"name": "Controlador de diagrama de flujo",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "[Function]",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Teclado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "List",
+			"name": "Lista",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Almacenamiento local",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Multiplayer",
+			"name": "Multijugador",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Partículas",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "PlatformInfo",
+			"name": "Información de la plataforma",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Shape3D",
+			"name": "Forma 3D",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Fuente Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Fondo en mosaico",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Mapa de teselas",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Timeline",
+			"name": "Controlador de la línea de tiempo",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Control táctil",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Mando",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Ancla",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bala",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Arrastrar y soltar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direcciones",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Desvanecer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Parpadeo",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Línea de visión",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persistencia",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Físicas",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pegado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Plataforma",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Seno",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Temporizador",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween (interpolación)",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Restringido a la escena",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Salto a través",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Desplazar hasta",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Sólido",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "alphaclamp2",
+			"name": "Fijación Alfa",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blurhorizontal",
+			"name": "Desenfoque horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "crystalball",
+			"name": "Bola de cristal",
+			"author": "Brad Larson",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "darken",
+			"name": "Oscurecer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "exclusion",
+			"name": "Exclusión",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Brillo horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowvertical",
+			"name": "Brillo vertical",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "multiply",
+			"name": "Multiplicar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "noise",
+			"name": "Ruido",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "replacecolor",
+			"name": "Reemplazar un color",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "sepia",
+			"name": "Sepia",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "setcolor",
+			"name": "Establecer color",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "skendpow",
+			"name": "[SkendPow]",
+			"author": "Somebody / Mikal / skymen",
+			"bundled": false,
+			"version": "1.5.0"
+		},
+		{
+			"type": "effect",
+			"id": "skymen_BetterOutline",
+			"name": "[Better Outline]",
+			"author": "skymen",
+			"bundled": false,
+			"version": "2.0.0.3"
+		},
+		{
+			"type": "effect",
+			"id": "warpobject",
+			"name": "Distorsionar objeto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpobjectmask",
+			"name": "Máscara de distorsión de objeto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Agua",
+			"author": "Viktor Korsun",
+			"bundled": false
+		}
+	],
+	"uniqueId": "qnx2oqulqic",
+	"objectTypes": {
+		"items": [
+			"player",
+			"Sprite2",
+			"solid",
+			"mask",
+			"Keyboard",
+			"Sprite",
+			"hitbox",
+			"player2",
+			"Sprite3",
+			"TiledBackground",
+			"Men_Button",
+			"SpriteFont",
+			"Gamepad",
+			"Sprite5",
+			"3DCamera",
+			"LocalStorage",
+			"Keys",
+			"Function",
+			"Sprite6",
+			"trans",
+			"Sprite7",
+			"Charslot",
+			"Sprite9",
+			"TOWER",
+			"Sprite11",
+			"Sprite8",
+			"TiledBackground2",
+			"Hand",
+			"Char_Selector",
+			"Sprite12",
+			"charescreen",
+			"CAMPRINCIPAL",
+			"Camsec1",
+			"Camsec2",
+			"CAMPRINCIPAL2",
+			"Sprite13",
+			"Sprite14",
+			"TiledBackground3",
+			"Sprite15",
+			"List",
+			"Sprite16",
+			"Saved",
+			"Sprite17",
+			"Sprite18",
+			"OnOff",
+			"Camsec3",
+			"Camsec4",
+			"particulas",
+			"flash",
+			"Ud_line",
+			"SpriteFont2",
+			"ud_rombo",
+			"icon",
+			"shield",
+			"edge",
+			"Stats",
+			"colors",
+			"stockhud",
+			"AJAX",
+			"grab",
+			"Sprite23",
+			"Sprite24",
+			"FlowchartController",
+			"spawner",
+			"Multiplayer",
+			"proyectil",
+			"Pointer",
+			"Percentaje",
+			"P1mark",
+			"P2mark",
+			"P3mark",
+			"P4mark",
+			"deatheffect",
+			"deathzone",
+			"Audio",
+			"St_BackPlanes",
+			"cloud",
+			"cloud2",
+			"titlecard",
+			"St_Lit3",
+			"Men_Back",
+			"StageImage",
+			"3DShape",
+			"3DShape2",
+			"StageView",
+			"Plane",
+			"TimelineController",
+			"Particles2",
+			"Particles",
+			"forest",
+			"Mushrooms",
+			"St_Backtrees",
+			"Sprite30",
+			"TiledBackground4",
+			"Sprite31",
+			"TiledBackground5",
+			"details",
+			"Particle_Leaf",
+			"raindrop",
+			"Particle_rain",
+			"St_ouse",
+			"St_BackBuilds",
+			"St_Backclouds",
+			"Tilemap",
+			"Sprite35",
+			"Back1",
+			"Sprite36",
+			"Sprite10",
+			"teleporter",
+			"teleporter2",
+			"light",
+			"firefly",
+			"black",
+			"Particle_flu",
+			"St_Li2",
+			"Sprite38",
+			"St_Li",
+			"countdown",
+			"stafe",
+			"Horizon",
+			"TiledBackground6",
+			"TiledBackground7",
+			"Spawn_platform",
+			"Spawn_Lit",
+			"CBar",
+			"C_base",
+			"Sprite4",
+			"Counter",
+			"P_fade",
+			"Toyc_p",
+			"Particle_flu2",
+			"SmurfSelec",
+			"Sprite19",
+			"Sprite20",
+			"fade",
+			"Touch",
+			"Sprite21",
+			"Sprite22",
+			"Sprite25",
+			"ModalBox",
+			"Sprite26",
+			"Sprite27",
+			"TiledBackground8",
+			"Sprite28",
+			"Sprite29",
+			"Sprite32",
+			"TiledBackground9",
+			"TiledBackground10",
+			"Sprite33",
+			"Button",
+			"movecursor",
+			"PlatformInfo",
+			"ButtonD",
+			"ButtonL",
+			"ButtonU",
+			"ButtonR",
+			"Browser",
+			"Col",
+			"lockon",
+			"solid2",
+			"SpriteFont3",
+			"cr_im",
+			"Sprite37",
+			"Sprite34",
+			"Sprite39",
+			"psote",
+			"rope",
+			"ropecol",
+			"Prop",
+			"Sprite40",
+			"Button2",
+			"KEYS2",
+			"Sprite41",
+			"TiledBackground11",
+			"TiledBackground12",
+			"Sprite42"
+		],
+		"subfolders": []
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"Family1",
+			"roes",
+			"buttons"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Main menu",
+			"Char Select screen",
+			"Stage Select",
+			"Game Options",
+			"Control",
+			"Bucket",
+			"Load",
+			"Control2",
+			"Titlescreen",
+			"Results",
+			"credits",
+			"Control3"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Layout 50",
+					"Layout 6",
+					"Layout 1",
+					"Layout 4",
+					"Layout 3",
+					"Layout 2",
+					"Layout 5",
+					"Layout 0",
+					"non"
+				],
+				"subfolders": [],
+				"name": "Stages"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [
+			"Game",
+			"MM",
+			"Controls",
+			"CSE",
+			"Optons",
+			"GO",
+			"SS",
+			"Event sheet 1",
+			"Event sheet 2",
+			"Event sheet 3",
+			"Event sheet 4"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "Sel3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 346367855109403,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Sel4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 581135153014707,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Sel5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 552488345897244,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Sel6.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 749576038808913,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Sel7.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 128181289097054,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Sel8.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 690775807321927,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Sel1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 156371883257433,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Sel2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 966144941969195,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CEL1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 541364988318457,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CEL2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 556054796185838,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CEL3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 714870012310032,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CEL4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 343845504355747,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CEL5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 377139433964508,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CEL6.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 960587001723340,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CEL7.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 993242114846737,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CEL8.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 853669552977157,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Explo1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 882269905665732,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Explo2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 153365479429858,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "break.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 198512243488350,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "dAS.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 535680554687914,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Deat.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 994822534043434,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Floor Hit 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 536125855758674,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Floor Hit.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 441948507553135,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Footsteps 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 944406972783628,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Footsteps 3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 404120537720450,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Footsteps 4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 196634411797745,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Footsteps 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 977081625087004,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "golpe 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 387535324689460,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "golpe 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 626348771826104,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hitHurt (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 204375900935940,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hitHurt (2).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 194906055943771,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hitHurt (3).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 386350878347119,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hitHurt (4).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 576807620832609,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hitHurt (5).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 551779944297474,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hitHurt (6).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 756929456323088,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Shield Block Off.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 111408401999447,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Shield Block On.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 572638903105335,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_2_down.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 300570631240155,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_2_s.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 573992694993915,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_3_D1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 468373573924397,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_3_D2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 608723307400564,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_4_s.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 688457151350414,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_5_s.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 690844226763172,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_7_down.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 852359010515062,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_7_up1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 586565661372703,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_7_up2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 411743544278386,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_7_up3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 533743655112008,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_7_up4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 840659521648136,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_7_up5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 543595115223992,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "C_7_up6.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 273158410721730,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_1_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 543691577905163,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_1_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 765401101125321,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_1_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 146550275244401,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_2_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 117217102831218,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_2_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 158493438119791,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_2_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 579525364196301,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_3_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 586967557198648,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_3_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 526761373695216,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_3_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 280109020549955,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_4_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 549804790612527,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_4_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 774569108862219,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_4_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 225305446907167,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_5_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 647092443878443,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_5_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 991175537828663,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_5_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 679081025264182,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_6_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 305604791609986,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_6_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 361627426915870,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_6_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 470063543030938,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_6_4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 966535480343129,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_7_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 392998381479848,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_7_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 542246840550122,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_7_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 188126103592507,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_7_4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 789689897113250,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_8_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 720736211617757,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_8_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 145592201995057,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DM_8_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 745330660520108,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_1_down.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 916608421578271,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_1_neutral.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 614700304436725,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_1_s.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 852315072705567,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_1_up.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 296861439209400,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_2_down.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 784304021676930,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_2_neutral.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 624365382583237,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_2_s.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 422381152206817,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_2_ss.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 153960307495738,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_2_up.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 476031782097638,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_3_down.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 155861365245611,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_3_neutral.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 135873205616973,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_3_S.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 600263804383457,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_3_up.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 248244148209580,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_3_upp.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 353983623138013,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_down.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 623146174063380,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_N1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 542475023156308,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_N2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 176194800071355,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_N3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 320546345856532,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_N4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 353192965410188,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_N5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 773752710239009,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_N6.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 491360383365288,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_N7.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 977570193657843,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_N8.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 389803134660578,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_s.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 696408835199127,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_4_up.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 335074190382552,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_5_down1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 909824285661415,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_5_down2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 869400115594018,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_5_down3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 693259030507970,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_5_down4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 598330825401369,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_5_neutral.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 585707465917397,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_5_s.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 114936149684586,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_5_ss.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 963648785941208,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_5_up.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 279178577119512,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_6_down1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 478893735318371,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_6_down2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 878063807319598,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_6_down3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 855346111993387,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_6_s.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 763734850486526,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_6_up.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 986909300296414,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_7_down.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 137758324933199,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_7_neutral.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 164918556940576,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_7_s.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 282086467178911,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_7_up.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 913878296931977,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_7_upp.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 448003540794182,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_8_down.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 368624622230982,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_8_neutral.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 151883115145980,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_8_s.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 125156082577170,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ESP_8_up.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 751318320330564,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_1_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 895023703083555,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_1_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 293642385730833,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_2_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 846589983507424,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_2_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 361049831535052,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_3_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 850914930968270,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_3_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 400660118230525,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_4_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 877493651297482,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_4_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 387171689780004,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_5_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 278895734805928,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_5_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 296472468568679,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_6_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 556042197084030,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_6_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 226948065040001,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_7_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 862416529518120,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_7_2 .webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 447321549094404,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_8_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 220325405970736,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump_8_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 209531397561679,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_1_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 179511545747379,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_1_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 938626596157676,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_1_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 213473419855762,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_2_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 221141030218699,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_2_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 918065498726800,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_2_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 487351771792471,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_3_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 218761811471633,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_3_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 626205622937537,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_3_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 341046739441140,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_4_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 169316098652167,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_4_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 666669116964267,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_4_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 765270081694384,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_5_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 146584538920171,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_5_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 813004584901823,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_5_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 982305762683642,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_6_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 808523369167342,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_6_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 478686307791088,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_6_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 646896301380507,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_7_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 443519326737330,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_7_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 670632745220620,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_7_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 969251653377235,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_8_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 303203446564321,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_8_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 221868905054602,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PE_8_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 840184106957927,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "BACK.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 858418435957895,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Grabbing.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 230218767027390,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Move.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 843625305912107,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Move1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 890151851893451,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Pause.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 904959437755177,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "select.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 852472208190377,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Select1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 769565123099417,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Win1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 404694031298095,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "game.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 509671149887773,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Pollos.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 751636726538874,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Brus.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 568763836273689,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "Battle_0.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 785064071921453,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Character_Select_Actualizado.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 258789018662159,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Menu_Crusher_Pero_Con_Don_Pollo.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 228779929156221,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "y2mate.com - Super Smash Bros Brawl Music  Main Menu  HD.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 366064070569632,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Battle_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 501985182625972,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Battle_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 388755589351331,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Battle_5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 328867755333912,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Battle_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 166261957147257,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Battle_4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 408338025627203,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Backrooms1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 459426668896974,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Backrooms2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 183361422078189,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Backrooms3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 579934662097183,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Backrooms4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 569201930220212,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Rain.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 496596633504977,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Storm.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 383830495992829,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Win.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 972292753490383,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Battle_6.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 949560014333969,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Battle_50.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 253970192485870,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "EASTER.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 487757028763795,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 179397117207841,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 988020800990793,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 860051947123289,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 379346264468817,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 642942269902336,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 968454599492930,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 524850055030634,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "Colors.json",
+					"type": "application/json",
+					"sid": 741608786464781,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Mush",
+			"Mush2",
+			"PLane",
+			"Plane 2",
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "Platform Fighting Game",
+		"version": "1.0.2",
+		"author": "xobydev",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "com.xobydev.momoscrush",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": true,
+		"fullscreenMode": "scale-outer",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "none",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 480,
+	"viewportHeight": 270,
+	"firstLayout": "Load"
+}

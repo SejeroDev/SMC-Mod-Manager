@@ -1,0 +1,62 @@
+{
+	"name": "CAMPRINCIPAL",
+	"plugin-id": "Sprite",
+	"sid": 756623110180195,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2031084,
+						"collisionPoly": {
+							"points": [
+								0.48717948717948717,
+								0.03731343283582089,
+								0.7435897435897436,
+								0.05970149253731343,
+								0.8376068376068376,
+								0.2835820895522388,
+								0.9829059829059829,
+								0.9104477611940298,
+								0.9829059829059829,
+								0.9552238805970149,
+								0.9316239316239316,
+								1,
+								0.1111111111111111,
+								1,
+								0,
+								0.582089552238806,
+								0,
+								0.5149253731343284,
+								0,
+								0.30597014925373134
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 511459162296495,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

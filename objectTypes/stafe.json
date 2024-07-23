@@ -1,0 +1,140 @@
+{
+	"name": "stafe",
+	"plugin-id": "Sprite",
+	"sid": 140988305401149,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8200032,
+						"collisionPoly": {
+							"points": [
+								0.418,
+								0.38,
+								0.634,
+								0.428,
+								0.918,
+								0.664,
+								0.858,
+								0.792,
+								0.766,
+								0.89,
+								0.694,
+								0.936,
+								0.482,
+								0.98,
+								0.298,
+								0.946,
+								0.148,
+								0.862,
+								0.06,
+								0.75,
+								0.06,
+								0.664,
+								0.118,
+								0.55
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 733898052979042,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3229850,
+						"collisionPoly": {
+							"points": [
+								0.504,
+								0.418,
+								0.578,
+								0.448,
+								0.92,
+								0.664,
+								0.79,
+								0.91,
+								0.452,
+								1,
+								0.218,
+								0.876,
+								0.132,
+								0.818,
+								0.06,
+								0.704,
+								0.058,
+								0.664,
+								0.214,
+								0.516,
+								0.442,
+								0.422
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 891295798431109,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 2000,
+						"height": 2000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3186118,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 838230542767683,
+				"name": "Animation 3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"name": "grab",
+	"plugin-id": "Sprite",
+	"sid": 707066614247340,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "dir",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 332078993127432
+		},
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 965956536979388
+		},
+		{
+			"name": "MODE",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 594518354917152
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.748,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 738517,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 378765809639188,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

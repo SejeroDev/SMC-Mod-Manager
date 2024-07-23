@@ -1,0 +1,624 @@
+{
+	"name": "player",
+	"plugin-id": "Sprite",
+	"sid": 133752088976779,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "jump",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 909419337335523
+		},
+		{
+			"name": "State",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 949983405545696
+		},
+		{
+			"name": "Attack",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 991996676012319
+		},
+		{
+			"name": "Charge",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 549858736890771
+		},
+		{
+			"name": "lastdir",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 644670925042803
+		},
+		{
+			"name": "per",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 926847634602328
+		},
+		{
+			"name": "BULLET",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 726099025369274
+		},
+		{
+			"name": "Potencia",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 677788657821906
+		},
+		{
+			"name": "PLAYER",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 196659297789917
+		},
+		{
+			"name": "fallind",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 213820326441951
+		},
+		{
+			"name": "shield",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 894550031716264
+		},
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 842502157772919
+		},
+		{
+			"name": "cooldown",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 588818316086935
+		},
+		{
+			"name": "movecooldown",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 115235251860272
+		},
+		{
+			"name": "C",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 756533733753501
+		},
+		{
+			"name": "char",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 922510163477109
+		},
+		{
+			"name": "JUMPSTREGHT",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 580285059194721
+		},
+		{
+			"name": "JumpStreght2",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 324967414987305
+		},
+		{
+			"name": "VIDAS",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 222755552196489
+		},
+		{
+			"name": "Anglepunch",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 414228602295108
+		},
+		{
+			"name": "Daño",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 750256902380603
+		},
+		{
+			"name": "raw",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 574820470181692
+		},
+		{
+			"name": "JumpNumb",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 831594976715667
+		},
+		{
+			"name": "InitialJump",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 995948497955658
+		},
+		{
+			"name": "WD",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 642723365726625
+		},
+		{
+			"name": "DEATH",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 614064171585921
+		},
+		{
+			"name": "Stun",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 584416836849523
+		},
+		{
+			"name": "SPECIAL",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 927720669597872
+		},
+		{
+			"name": "EXTRADM",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 461655790134484
+		},
+		{
+			"name": "EXTRAPW",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 955931097799879
+		},
+		{
+			"name": "EXTRASPEED",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 602559278689528
+		},
+		{
+			"name": "POINT",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 339430385207031
+		},
+		{
+			"name": "LEVEL",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 946148897949445
+		},
+		{
+			"name": "LOCK",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 503361971828783
+		},
+		{
+			"name": "MV",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 220326338178418
+		},
+		{
+			"name": "AT",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 506284144615741
+		},
+		{
+			"name": "CPU",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 792778439303736
+		},
+		{
+			"name": "AT2",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 625125218262228
+		},
+		{
+			"name": "MV1",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 113832099362533
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 397687518951822
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 789945546874843
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 597255839566991
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 462754905918147
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 424851528350132
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 149764367302852
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 957631328934485
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.3333333333333333,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4546001,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "H1",
+								"x": 0.5,
+								"y": 0.6666666666666666
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.5,
+								"y": 1
+							},
+							{
+								"name": "Flash",
+								"x": 0.3125,
+								"y": 0.2916666666666667
+							},
+							{
+								"name": "Pointer",
+								"x": 0.5,
+								"y": -0.4166666666666667
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 981284806905229,
+				"name": "24",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.42857142857142855,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7110567,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "H1",
+								"x": 0.5,
+								"y": 0.5714285714285714
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.5,
+								"y": 1
+							},
+							{
+								"name": "Flash",
+								"x": 0.3125,
+								"y": 0.35714285714285715
+							},
+							{
+								"name": "Pointer",
+								"x": 0.5,
+								"y": -0.17857142857142858
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 951916366055775,
+				"name": "28",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2806848,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "H1",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.5,
+								"y": 1
+							},
+							{
+								"name": "Flash",
+								"x": 0.3125,
+								"y": 0.3125
+							},
+							{
+								"name": "Pointer",
+								"x": 0.5,
+								"y": -0.17857142857142858
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 574624217367055,
+				"name": "32",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.6,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9771935,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.037499964237213135,
+								1,
+								0.03437499701976776,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "H1",
+								"x": 0.5,
+								"y": 0.4
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.5,
+								"y": 1
+							},
+							{
+								"name": "Flash",
+								"x": 0.3125,
+								"y": 0.25
+							},
+							{
+								"name": "Pointer",
+								"x": 0.5,
+								"y": -0.25
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 662375245747410,
+				"name": "40",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.6666666666666666,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6831234,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.08544609419204906,
+								1,
+								0.08416862326598018,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "H1",
+								"x": 0.5,
+								"y": 0.3333333333333333
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.5,
+								"y": 1
+							},
+							{
+								"name": "Flash",
+								"x": 0.3125,
+								"y": 0.20833333333333334
+							},
+							{
+								"name": "Pointer",
+								"x": 0.5,
+								"y": -0.3125
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 280220688070688,
+				"name": "48",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3575788,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "H1",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.5,
+								"y": 1
+							},
+							{
+								"name": "Flash",
+								"x": 0.3125,
+								"y": 0.3125
+							},
+							{
+								"name": "Pointer",
+								"x": 0.5,
+								"y": -0.17857142857142858
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 752839913150535,
+				"name": "run",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

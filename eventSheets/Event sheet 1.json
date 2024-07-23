@@ -1,0 +1,190 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 205912292593801
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "mask",
+					"sid": 969077060925406,
+					"parameters": {
+						"animation": "\"run2_\"&choose(1,2,3,4,5,6,7,8)",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 880690418530010,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-mobile",
+							"objectClass": "PlatformInfo",
+							"sid": 271100126373269
+						}
+					],
+					"actions": [
+						{
+							"id": "request-fullscreen",
+							"objectClass": "Browser",
+							"sid": 169335068182007,
+							"parameters": {
+								"mode": "stretch-scale-outer",
+								"navigation-ui": "hide"
+							}
+						}
+					],
+					"sid": 401511826968901
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-mobile",
+							"objectClass": "PlatformInfo",
+							"sid": 351482145523746,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 215095181487342
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 193197563450095
+				}
+			],
+			"actions": [
+				{
+					"id": "set-image-offset-y",
+					"objectClass": "TiledBackground",
+					"sid": 341306672256929,
+					"parameters": {
+						"offset-y": "Self.ImageOffsetY+0.5"
+					}
+				}
+			],
+			"sid": 432274229492335
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 348253963392961
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 238134879761787,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont2",
+					"sid": 352680772127601,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 305204737780401
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 725196896488819
+				},
+				{
+					"id": "on-any-button-pressed",
+					"objectClass": "Gamepad",
+					"sid": 207489836019519,
+					"parameters": {
+						"gamepad": "0"
+					}
+				},
+				{
+					"id": "on-any-button-pressed",
+					"objectClass": "Gamepad",
+					"sid": 116428205686093,
+					"parameters": {
+						"gamepad": "1"
+					}
+				},
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 231578130842702
+				}
+			],
+			"actions": [],
+			"sid": 589799364398978,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont2",
+							"sid": 314399683508799,
+							"parameters": {
+								"instance-variable": "menu",
+								"comparison": 0,
+								"value": "-1"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "SpriteFont2",
+							"sid": 142777210143888
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 818334406932868,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 214937437596980,
+							"parameters": {
+								"layout": "Titlescreen"
+							}
+						}
+					],
+					"sid": 183486357485933
+				}
+			],
+			"isOrBlock": true
+		}
+	],
+	"sid": 236072112518014
+}

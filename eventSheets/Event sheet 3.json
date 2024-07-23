@@ -1,0 +1,1215 @@
+{
+	"name": "Event sheet 3",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Controls"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 240091882213494
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 846394864866697,
+					"parameters": {
+						"tag": "\"RAIN\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 772129015736853,
+					"parameters": {
+						"tag": "\"STORM\""
+					}
+				}
+			],
+			"sid": 993410890885336,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "charescreen",
+							"sid": 578324478437574,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "charescreen",
+							"sid": 155512289271020,
+							"parameters": {
+								"animation": "\"Ch\"&CHAR1",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 674131570207820
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "charescreen",
+							"sid": 241622396672498,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "charescreen",
+							"sid": 359229114706033,
+							"parameters": {
+								"animation": "\"Ch\"&CHAR2",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 398365899400401
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "charescreen",
+							"sid": 131480669094386,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "charescreen",
+							"sid": 201786974188552,
+							"parameters": {
+								"animation": "\"Ch\"&CHAR3",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 218417196243100
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "charescreen",
+							"sid": 195191098043598,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "charescreen",
+							"sid": 973380854653179,
+							"parameters": {
+								"animation": "\"Ch\"&CHAR4",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 939581708353146
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "mask",
+							"sid": 690316583886048,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "mask",
+							"sid": 357287505462645,
+							"parameters": {
+								"animation": "\"stand_\"&Stats.At(3,1)",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 124348878948117
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "mask",
+							"sid": 492309786354727,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "mask",
+							"sid": 681645553655342,
+							"parameters": {
+								"animation": "\"Stun_\"&Stats.At(2,1)",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 815776595579986
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "mask",
+							"sid": 855734637766124,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "mask",
+							"sid": 135080517751088,
+							"parameters": {
+								"animation": "\"Stun_\"&Stats.At(1,1)",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 465174684881223
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "mask",
+							"sid": 190540723858332,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "mask",
+							"sid": 704052693432790,
+							"parameters": {
+								"animation": "\"Stun_\"&Stats.At(0,1)",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 789230412184581
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-xy",
+							"objectClass": "Stats",
+							"sid": 860477426738052,
+							"parameters": {
+								"x": "1",
+								"y": "1",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 643584306020708,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "mask",
+									"sid": 413292063393080,
+									"parameters": {
+										"instance-variable": "PLAYER",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "mask",
+									"sid": 684789142399810,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 860721311828184
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-xy",
+							"objectClass": "Stats",
+							"sid": 369703788917287,
+							"parameters": {
+								"x": "0",
+								"y": "1",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 827646837746453,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "mask",
+									"sid": 578985324951436,
+									"parameters": {
+										"instance-variable": "PLAYER",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "mask",
+									"sid": 833880964086426,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 832946538180561
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 863543949103829,
+							"parameters": {
+								"object": "SpriteFont2"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont2",
+							"sid": 100016719106080,
+							"parameters": {
+								"instance-variable": "menu",
+								"comparison": 0,
+								"value": "51"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 261816398865606,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "Stats",
+									"sid": 124047792337531,
+									"parameters": {
+										"x": "0",
+										"y": "0",
+										"comparison": 0,
+										"value": "SpriteFont2.ID"
+									}
+								},
+								{
+									"id": "compare-at-xy",
+									"objectClass": "Stats",
+									"sid": 404868304315108,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"comparison": 0,
+										"value": "SpriteFont2.ID"
+									}
+								},
+								{
+									"id": "compare-at-xy",
+									"objectClass": "Stats",
+									"sid": 884937155684607,
+									"parameters": {
+										"x": "2",
+										"y": "0",
+										"comparison": 0,
+										"value": "SpriteFont2.ID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "SpriteFont2",
+									"sid": 818541553733249,
+									"parameters": {
+										"text": "\"LOSE\""
+									}
+								}
+							],
+							"sid": 799339031062970,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "Stats",
+									"sid": 764914478711643,
+									"parameters": {
+										"x": "3",
+										"y": "0",
+										"comparison": 0,
+										"value": "SpriteFont2.ID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "SpriteFont2",
+									"sid": 815275723706871,
+									"parameters": {
+										"text": "\"WIN\""
+									}
+								}
+							],
+							"sid": 751139072345813
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 510581465440539,
+							"parameters": {
+								"object": "SpriteFont2"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont2",
+							"sid": 323192563000416,
+							"parameters": {
+								"instance-variable": "menu",
+								"comparison": 0,
+								"value": "53"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 176516186552752,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "Stats",
+									"sid": 168673969295792,
+									"parameters": {
+										"x": "0",
+										"y": "0",
+										"comparison": 0,
+										"value": "SpriteFont2.ID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "SpriteFont2",
+									"sid": 595231654551055,
+									"parameters": {
+										"text": "\"4\""
+									}
+								}
+							],
+							"sid": 644826740626451,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "Stats",
+									"sid": 550126305058493,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"comparison": 0,
+										"value": "SpriteFont2.ID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "SpriteFont2",
+									"sid": 905607616509262,
+									"parameters": {
+										"text": "\"3\""
+									}
+								}
+							],
+							"sid": 441408264214740,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "Stats",
+									"sid": 717112796060426,
+									"parameters": {
+										"x": "2",
+										"y": "0",
+										"comparison": 0,
+										"value": "SpriteFont2.ID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "SpriteFont2",
+									"sid": 286854523262164,
+									"parameters": {
+										"text": "\"2\""
+									}
+								}
+							],
+							"sid": 163660667798381,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "Stats",
+									"sid": 173689417680955,
+									"parameters": {
+										"x": "3",
+										"y": "0",
+										"comparison": 0,
+										"value": "SpriteFont2.ID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "SpriteFont2",
+									"sid": 653308891295881,
+									"parameters": {
+										"text": "\"1\""
+									}
+								}
+							],
+							"sid": 786308427008587
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 320287293906254
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "trans",
+					"sid": 339847760729570,
+					"parameters": {
+						"x": "Self.X",
+						"y": "-192"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "trans",
+					"sid": 581910857416164,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "-488",
+						"time": "0.3",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite32",
+					"sid": 351092424369059,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "20",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 291818028444141,
+					"parameters": {
+						"audio-file": "Win",
+						"loop": "not-looping",
+						"volume": "SFX",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 670048187589901,
+					"parameters": {
+						"seconds": "0.35"
+					}
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 661502231903109,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"Sel\"&Stats.At(3,1)",
+						"loop": "not-looping",
+						"volume": "SFX",
+						"stereo-pan": "0",
+						"tag-optional": "\"EEE\""
+					}
+				}
+			],
+			"sid": 969083285692808
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 265718404528233
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 504774143213605,
+					"parameters": {
+						"scale": "Sprite32.Opacity/20"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 313054847258353,
+					"parameters": {
+						"x": "180",
+						"y": "224"
+					}
+				}
+			],
+			"sid": 580976055338058
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 701033555896277,
+					"parameters": {
+						"variable": "CHAR1",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 282529019849207,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Sprite29",
+							"sid": 303135497253928,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "charescreen",
+							"sid": 263769432539412,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite29",
+							"sid": 158208829695867,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "charescreen",
+							"sid": 699946835917040,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 260117577075043
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont2",
+							"sid": 968154614979583,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont2",
+							"sid": 408235524124982,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 316642953322957,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 553340745605073,
+					"parameters": {
+						"variable": "CHAR2",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 118544510730602,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Sprite29",
+							"sid": 505773517166445,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "charescreen",
+							"sid": 155037150831519,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite29",
+							"sid": 372157204100970,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "charescreen",
+							"sid": 513135016895564,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 511747297923907
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont2",
+							"sid": 802047279357073,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont2",
+							"sid": 669941880141150,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 906754960897553,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 831233885129217,
+					"parameters": {
+						"variable": "CHAR3",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 627595319246875,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Sprite29",
+							"sid": 444189260652545,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "charescreen",
+							"sid": 790356942028473,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite29",
+							"sid": 420583117301228,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "charescreen",
+							"sid": 591658049834921,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 556989123089840
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont2",
+							"sid": 682831688980151,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont2",
+							"sid": 431752531643695,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 548390131134796,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 703128561709625,
+					"parameters": {
+						"variable": "CHAR4",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 888449108111205,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Sprite29",
+							"sid": 408331570797253,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "charescreen",
+							"sid": 106881823602149,
+							"parameters": {
+								"instance-variable": "PLAYER",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite29",
+							"sid": 215357102246639,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "charescreen",
+							"sid": 672575292691210,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 241046200466495
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont2",
+							"sid": 355152221575478,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont2",
+							"sid": 634742460690163,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 889085020833944,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 879289522450426,
+					"parameters": {
+						"tag": "\"EEE\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 283418546981233,
+					"parameters": {
+						"audio-file": "Win1",
+						"loop": "not-looping",
+						"volume": "SFX-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 278822583077709
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 830039043687225,
+					"parameters": {
+						"name": "\"Pause\""
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "Audio",
+					"sid": 139940222632046,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 904830891403426,
+					"parameters": {
+						"layout": "Char Select screen"
+					}
+				}
+			],
+			"sid": 819025209906500,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 545937821409592,
+							"parameters": {
+								"tag": "\"SG\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 118789360313303,
+							"parameters": {
+								"audio-file": "Menu_Crusher_Pero_Con_Don_Pollo",
+								"loop": "looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"SG\""
+							}
+						}
+					],
+					"sid": 140356088272815
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 782963418812351,
+					"parameters": {
+						"object": "Button",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 409257319599720,
+					"parameters": {
+						"layout": "Char Select screen"
+					}
+				}
+			],
+			"sid": 620254744732306,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 115579345523153,
+							"parameters": {
+								"tag": "\"SG\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 884194994070357,
+							"parameters": {
+								"audio-file": "Menu_Crusher_Pero_Con_Don_Pollo",
+								"loop": "looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"SG\""
+							}
+						}
+					],
+					"sid": 923067298935648
+				}
+			]
+		}
+	],
+	"sid": 755755964775392
+}

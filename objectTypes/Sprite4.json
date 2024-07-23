@@ -1,0 +1,59 @@
+{
+	"name": "Sprite4",
+	"plugin-id": "Sprite",
+	"sid": 611622097956432,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "warpobjectmask",
+			"name": "WarpObjectMask"
+		},
+		{
+			"effectId": "darken",
+			"name": "Darken"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1000,
+						"height": 1000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5267127,
+						"collisionPoly": {
+							"points": [
+								0.4375,
+								0.4375,
+								0.5625,
+								0.4375,
+								0.5625,
+								0.5625,
+								0.4375,
+								0.5625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 386775649975132,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,78 @@
+{
+	"name": "ropecol",
+	"plugin-id": "Sprite",
+	"sid": 745939800694162,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "distance",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 395243547981098
+		},
+		{
+			"name": "ison",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 844850261663947
+		},
+		{
+			"name": "ox",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 472424105101712
+		},
+		{
+			"name": "oy",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 152473611957381
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 890862931693704
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 977967814569861
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7782863,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 668723040237195,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

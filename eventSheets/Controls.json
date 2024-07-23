@@ -1,0 +1,5063 @@
+{
+	"name": "Controls",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "No juzgar que use un chingo de variables cuando pude haber usado un array para los inputs "
+		},
+		{
+			"eventType": "comment",
+			"text": "pero esto funciona de modo que el valor de cada variable \"KEY\" es el valor de una tecla"
+		},
+		{
+			"eventType": "variable",
+			"name": "C4",
+			"type": "number",
+			"initialValue": "4",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 756156675865023
+		},
+		{
+			"eventType": "variable",
+			"name": "C3",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 409639623809378
+		},
+		{
+			"eventType": "variable",
+			"name": "C2",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 969982087125549
+		},
+		{
+			"eventType": "variable",
+			"name": "C1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 750825970682424
+		},
+		{
+			"eventType": "variable",
+			"name": "MenuSelected",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 492080963442453
+		},
+		{
+			"eventType": "variable",
+			"name": "K_KEYCODE",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 806071005926343
+		},
+		{
+			"eventType": "comment",
+			"text": "Player1"
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_PAUSE",
+			"type": "number",
+			"initialValue": "9",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 485588629635050
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_UP",
+			"type": "number",
+			"initialValue": "8",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 611272991172421
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_DOWN",
+			"type": "number",
+			"initialValue": "7",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 816899893713556
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_RIGHT",
+			"type": "number",
+			"initialValue": "6",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 954357283345365
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_LEFT",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 611986054691675
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_Jump",
+			"type": "number",
+			"initialValue": "42",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 705095840447271
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_T",
+			"type": "number",
+			"initialValue": "38",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 552035862700382
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_D",
+			"type": "number",
+			"initialValue": "37",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 954501997833028
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_C",
+			"type": "number",
+			"initialValue": "4",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 670420456686707
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_B",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 830346348352334
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_A",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 547383471695222
+		},
+		{
+			"eventType": "comment",
+			"text": "Player2"
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_PAUSE2",
+			"type": "number",
+			"initialValue": "17",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 512239997089549
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_UP2",
+			"type": "number",
+			"initialValue": "16",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 250232646901496
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_DOWN2",
+			"type": "number",
+			"initialValue": "15",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 687047597826600
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_RIGHT2",
+			"type": "number",
+			"initialValue": "14",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 323004823220185
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_LEFT2",
+			"type": "number",
+			"initialValue": "13",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 518244795620150
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_Jump2",
+			"type": "number",
+			"initialValue": "43",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 127670121346969
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_T2",
+			"type": "number",
+			"initialValue": "39",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 187715681281524
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_D2",
+			"type": "number",
+			"initialValue": "36",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 436599196824271
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_C2",
+			"type": "number",
+			"initialValue": "12",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 805253710523262
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_B2",
+			"type": "number",
+			"initialValue": "11",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 720520447765723
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_A2",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 258802004947277
+		},
+		{
+			"eventType": "comment",
+			"text": "Player3"
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_PAUSE3",
+			"type": "number",
+			"initialValue": "25",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 272859759386911
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_UP3",
+			"type": "number",
+			"initialValue": "24",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 483014865166361
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_DOWN3",
+			"type": "number",
+			"initialValue": "23",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 444291894430999
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_RIGHT3",
+			"type": "number",
+			"initialValue": "22",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 474060717904086
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_LEFT3",
+			"type": "number",
+			"initialValue": "21",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 560314273710980
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_Jump3",
+			"type": "number",
+			"initialValue": "44",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 714809110677501
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_T3",
+			"type": "number",
+			"initialValue": "40",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 584611289077824
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_D3",
+			"type": "number",
+			"initialValue": "35",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 221490098246356
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_C3",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 175625241533395
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_B3",
+			"type": "number",
+			"initialValue": "19",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 473684071145697
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_A3",
+			"type": "number",
+			"initialValue": "18",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 414128044265162
+		},
+		{
+			"eventType": "comment",
+			"text": "Player4"
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_PAUSE4",
+			"type": "number",
+			"initialValue": "33",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 700669657729275
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_UP4",
+			"type": "number",
+			"initialValue": "32",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 270752343749692
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_DOWN4",
+			"type": "number",
+			"initialValue": "31",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 392601612600682
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_RIGHT4",
+			"type": "number",
+			"initialValue": "30",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 157824421458973
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_LEFT4",
+			"type": "number",
+			"initialValue": "29",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 864301131998447
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_Jump4",
+			"type": "number",
+			"initialValue": "45",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 959773279072763
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_T4",
+			"type": "number",
+			"initialValue": "41",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 185845721116810
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_D4",
+			"type": "number",
+			"initialValue": "34",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 465456071064843
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_C4",
+			"type": "number",
+			"initialValue": "28",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 476987223766093
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_B4",
+			"type": "number",
+			"initialValue": "27",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 572726007594469
+		},
+		{
+			"eventType": "variable",
+			"name": "KEY_A4",
+			"type": "number",
+			"initialValue": "26",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 500003177067141
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 948192352684945,
+					"parameters": {
+						"key": "\"SSB_keys\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "Keys",
+					"sid": 492136910309976,
+					"parameters": {
+						"json": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 812729108739552
+		},
+		{
+			"eventType": "comment",
+			"text": "comprobar si existen controles + reconectar si es el caso"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 968151393730346,
+					"parameters": {
+						"key": "\"C1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 591185816030957,
+					"parameters": {
+						"variable": "C1",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 830001523755798
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 866117833809576,
+					"parameters": {
+						"key": "\"C2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 268322002885754,
+					"parameters": {
+						"variable": "C2",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 345203120933472
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 996424609299905,
+					"parameters": {
+						"key": "\"C3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 879573662244261,
+					"parameters": {
+						"variable": "C3",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 277715992915765
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 460960248644816,
+					"parameters": {
+						"key": "\"C4\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 725512857789228,
+					"parameters": {
+						"variable": "C4",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 240038279953236
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 650224961482486,
+					"parameters": {
+						"variable": "GamepadCount",
+						"comparison": 2,
+						"value": "C1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 668279881587075,
+					"parameters": {
+						"variable": "C1",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 464495632993454
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 226916040796588,
+					"parameters": {
+						"variable": "GamepadCount",
+						"comparison": 2,
+						"value": "c2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 567220517287637,
+					"parameters": {
+						"variable": "C2",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 770250807486173
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 219455359732551,
+					"parameters": {
+						"variable": "GamepadCount",
+						"comparison": 2,
+						"value": "c3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 791680665952589,
+					"parameters": {
+						"variable": "C3",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 792690339631472
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 465341677441018,
+					"parameters": {
+						"variable": "GamepadCount",
+						"comparison": 2,
+						"value": "c4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 386367854748273,
+					"parameters": {
+						"variable": "C4",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 493860614544243
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-gamepad-connected",
+					"objectClass": "Gamepad",
+					"sid": 544086509517541
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 182265107861103,
+					"parameters": {
+						"variable": "GamepadCount",
+						"value": "Gamepad.GamepadCount"
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 889896217140657,
+					"parameters": {
+						"key": "\"C1\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 577025481679601,
+					"parameters": {
+						"key": "\"C2\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 794857071789243,
+					"parameters": {
+						"key": "\"C3\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 371136567877721,
+					"parameters": {
+						"key": "\"C4\""
+					}
+				}
+			],
+			"sid": 520115355908597
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 623116253353147,
+					"parameters": {
+						"key": "\"SSB_keys\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "\"Default\"",
+					"sid": 998143873117114
+				}
+			],
+			"sid": 666884588053456
+		},
+		{
+			"functionName": "\"Default\"",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 955215272598087,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "valores por default de los controles"
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 295561825374717,
+							"parameters": {
+								"x": "KEY_A",
+								"y": "K_KEYCODE",
+								"value": "90"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 509295795065503,
+							"parameters": {
+								"x": "KEY_B",
+								"y": "K_KEYCODE",
+								"value": "88"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 107023108328968,
+							"parameters": {
+								"x": "KEY_C",
+								"y": "K_KEYCODE",
+								"value": "67"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 580402389531015,
+							"parameters": {
+								"x": "KEY_D",
+								"y": "K_KEYCODE",
+								"value": "90"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 434524385079720,
+							"parameters": {
+								"x": "KEY_T",
+								"y": "K_KEYCODE",
+								"value": "90"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 679645680294525,
+							"parameters": {
+								"x": "KEY_Jump",
+								"y": "K_KEYCODE",
+								"value": "87"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 270598486638693,
+							"parameters": {
+								"x": "KEY_LEFT",
+								"y": "K_KEYCODE",
+								"value": "37"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 947985869848012,
+							"parameters": {
+								"x": "KEY_RIGHT",
+								"y": "K_KEYCODE",
+								"value": "39"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 551529022079872,
+							"parameters": {
+								"x": "KEY_DOWN",
+								"y": "K_KEYCODE",
+								"value": "40"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 413248780037997,
+							"parameters": {
+								"x": "KEY_UP",
+								"y": "K_KEYCODE",
+								"value": "38"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 566125366223876,
+							"parameters": {
+								"x": "KEY_PAUSE",
+								"y": "K_KEYCODE",
+								"value": "16"
+							}
+						},
+						{
+							"type": "comment",
+							"text": ""
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 176357109663801,
+							"parameters": {
+								"x": "KEY_A2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 922713288927576,
+							"parameters": {
+								"x": "KEY_B2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 345569198173111,
+							"parameters": {
+								"x": "KEY_C2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 921367656830098,
+							"parameters": {
+								"x": "KEY_D2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 229392435104645,
+							"parameters": {
+								"x": "KEY_T2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 850465886992653,
+							"parameters": {
+								"x": "KEY_Jump2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 717434900478088,
+							"parameters": {
+								"x": "KEY_LEFT2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 164115410660834,
+							"parameters": {
+								"x": "KEY_RIGHT2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 955844396396331,
+							"parameters": {
+								"x": "KEY_DOWN2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 912539827052539,
+							"parameters": {
+								"x": "KEY_UP2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 974209795846019,
+							"parameters": {
+								"x": "KEY_PAUSE2",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"type": "comment",
+							"text": ""
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 907315452737201,
+							"parameters": {
+								"x": "KEY_A3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 650816472970498,
+							"parameters": {
+								"x": "KEY_B3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 359842591125482,
+							"parameters": {
+								"x": "KEY_C3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 252394763818018,
+							"parameters": {
+								"x": "KEY_D3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 732941959458474,
+							"parameters": {
+								"x": "KEY_T3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 917829988589422,
+							"parameters": {
+								"x": "KEY_Jump3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 496552266811584,
+							"parameters": {
+								"x": "KEY_LEFT3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 768394608213810,
+							"parameters": {
+								"x": "KEY_RIGHT3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 334672385805365,
+							"parameters": {
+								"x": "KEY_DOWN3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 812693230763154,
+							"parameters": {
+								"x": "KEY_UP3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 638657771330046,
+							"parameters": {
+								"x": "KEY_PAUSE3",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"type": "comment",
+							"text": ""
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 472996180761657,
+							"parameters": {
+								"x": "KEY_A4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 548398223302355,
+							"parameters": {
+								"x": "KEY_B4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 360646767742644,
+							"parameters": {
+								"x": "KEY_C4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 734781266696178,
+							"parameters": {
+								"x": "KEY_D4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 292815328209820,
+							"parameters": {
+								"x": "KEY_T4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 390559587686687,
+							"parameters": {
+								"x": "KEY_Jump4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 917975891622149,
+							"parameters": {
+								"x": "KEY_LEFT4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 452916047952499,
+							"parameters": {
+								"x": "KEY_RIGHT4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 804469757456720,
+							"parameters": {
+								"x": "KEY_DOWN4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 555350104182027,
+							"parameters": {
+								"x": "KEY_UP4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 943989848046787,
+							"parameters": {
+								"x": "KEY_PAUSE4",
+								"y": "K_KEYCODE",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 501784357958072,
+							"parameters": {
+								"key": "\"SSB_keys\"",
+								"value": "keys.AsJSON"
+							}
+						}
+					],
+					"sid": 786370135397568
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 608272309299055,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 818775683063053,
+							"parameters": {
+								"text": "keyboard.StringFromKeyCode(keys.At((SpriteFont.ID),K_KEYCODE))"
+							}
+						}
+					],
+					"sid": 780008234999443
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 737973317653837
+				}
+			],
+			"actions": [
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 269051228598348,
+					"parameters": {
+						"key": "\"SSB_keys\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 457915938038564,
+					"parameters": {
+						"key": "\"C1\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 272035051173293,
+					"parameters": {
+						"key": "\"C2\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 561405106085677,
+					"parameters": {
+						"key": "\"C3\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 131429811109411,
+					"parameters": {
+						"key": "\"C4\""
+					}
+				}
+			],
+			"sid": 660064919454949,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-android",
+							"objectClass": "PlatformInfo",
+							"sid": 129062457103458,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 347409204573652,
+							"parameters": {
+								"group-name": "\"Android\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 883233050197510,
+							"parameters": {
+								"group-name": "\"Keyboard\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 608574007574056,
+							"parameters": {
+								"layer": "\"CONTROLS\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 650962468278989
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-android",
+							"objectClass": "PlatformInfo",
+							"sid": 129062457103458
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 399636569397719,
+							"parameters": {
+								"group-name": "\"Android\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 186824483730566,
+							"parameters": {
+								"group-name": "\"Keyboard\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 134192734917724,
+							"parameters": {
+								"layer": "\"CONTROLS\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 185803595133867
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Button",
+							"sid": 485746968435745,
+							"parameters": {
+								"object": "SpriteFont2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "SpriteFont2",
+							"sid": 716258701420538,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Button",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 761047639676209
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Inputs",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Android",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "P1_Controls2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-any-button-pressed",
+											"objectClass": "Gamepad",
+											"sid": 130177370260860,
+											"parameters": {
+												"gamepad": "0"
+											}
+										},
+										{
+											"id": "on-any-button-pressed",
+											"objectClass": "Gamepad",
+											"sid": 909187950352777,
+											"parameters": {
+												"gamepad": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 872286183235117,
+											"parameters": {
+												"variable": "C1",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 583283198661702,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "player",
+													"sid": 814116070077202,
+													"parameters": {
+														"instance-variable": "PLAYER",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "player",
+													"sid": 962989877546331,
+													"parameters": {
+														"instance-variable": "C",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 141363349857949
+										}
+									],
+									"isOrBlock": true
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-touching-object",
+											"objectClass": "Touch",
+											"sid": 509727290532036,
+											"parameters": {
+												"object": "Button"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "player",
+											"sid": 409046844808914,
+											"parameters": {
+												"instance-variable": "C",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 910768165818810,
+											"parameters": {
+												"variable": "C1",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Button",
+											"sid": 648723954435456,
+											"parameters": {
+												"color": "rgbEx(0, 0, 0)"
+											}
+										}
+									],
+									"sid": 421554503900802,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Button",
+													"sid": 560202436690671,
+													"parameters": {
+														"instance-variable": "ID",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 166547060746048,
+													"parameters": {
+														"name": "\"P1A\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 716480165002027
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Button",
+													"sid": 165275856601921,
+													"parameters": {
+														"instance-variable": "ID",
+														"comparison": 0,
+														"value": "6"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 431768968525436,
+													"parameters": {
+														"name": "\"P1Up\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 939482533665918
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-touched-object",
+													"objectClass": "Touch",
+													"sid": 465914418065134,
+													"parameters": {
+														"object": "Button",
+														"type": "start"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Button",
+													"sid": 463295121996312,
+													"parameters": {
+														"instance-variable": "ID",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 867208972311547,
+													"parameters": {
+														"name": "\"P1B\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 308284899006355
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Button",
+													"sid": 970218149823968,
+													"parameters": {
+														"instance-variable": "ID",
+														"comparison": 0,
+														"value": "5"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 883117722805009,
+													"parameters": {
+														"name": "\"P1C\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 717352631902504
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-touched-object",
+													"objectClass": "Touch",
+													"sid": 993047228734236,
+													"parameters": {
+														"object": "Button",
+														"type": "start"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Button",
+													"sid": 410841416495650,
+													"parameters": {
+														"instance-variable": "ID",
+														"comparison": 0,
+														"value": "4"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 441083312911159,
+													"parameters": {
+														"name": "\"P1D\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 245471715616061
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 912157432859454,
+													"parameters": {
+														"name": "\"P1T\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 933894970893563,
+											"disabled": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-touched-object",
+													"objectClass": "Touch",
+													"sid": 551408412730777,
+													"parameters": {
+														"object": "Button",
+														"type": "start"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Button",
+													"sid": 988161432521731,
+													"parameters": {
+														"instance-variable": "ID",
+														"comparison": 0,
+														"value": "11"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 632586869460567,
+													"parameters": {
+														"name": "\"Pause\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 139229665353806
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-touching-object",
+											"objectClass": "Touch",
+											"sid": 486501905709790,
+											"parameters": {
+												"object": "ButtonD"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 806155175001624,
+											"parameters": {
+												"name": "\"P1Down\"",
+												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "ButtonD",
+											"sid": 106350563671443,
+											"parameters": {
+												"color": "rgbEx(0, 0, 0)"
+											}
+										}
+									],
+									"sid": 108911418894363
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-touching-object",
+											"objectClass": "Touch",
+											"sid": 217464682764379,
+											"parameters": {
+												"object": "ButtonL"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 601622452907940,
+											"parameters": {
+												"name": "\"P1MoveL\"",
+												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "ButtonL",
+											"sid": 909389307437841,
+											"parameters": {
+												"color": "rgbEx(0, 0, 0)"
+											}
+										}
+									],
+									"sid": 862546837199378
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-touching-object",
+											"objectClass": "Touch",
+											"sid": 476385514507132,
+											"parameters": {
+												"object": "ButtonU"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 577676876635764,
+											"parameters": {
+												"name": "\"P1Up\"",
+												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "ButtonU",
+											"sid": 585018128733044,
+											"parameters": {
+												"color": "rgbEx(0, 0, 0)"
+											}
+										}
+									],
+									"sid": 213975643173946
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-touching-object",
+											"objectClass": "Touch",
+											"sid": 371652582769804,
+											"parameters": {
+												"object": "ButtonR"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 929482787179220,
+											"parameters": {
+												"name": "\"P1moveR\"",
+												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "ButtonR",
+											"sid": 855238203246440,
+											"parameters": {
+												"color": "rgbEx(0, 0, 0)"
+											}
+										}
+									],
+									"sid": 781111158663437
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-touching-object",
+											"objectClass": "Touch",
+											"sid": 422115739590341,
+											"parameters": {
+												"object": "Button"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-default-color",
+											"objectClass": "Button",
+											"sid": 972800227588526,
+											"parameters": {
+												"color": "rgbEx(100, 100, 100)"
+											}
+										}
+									],
+									"sid": 696029519519153
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-touching-object",
+											"objectClass": "Touch",
+											"sid": 294540020271961,
+											"parameters": {
+												"object": "ButtonD"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-default-color",
+											"objectClass": "ButtonD",
+											"sid": 815429195484158,
+											"parameters": {
+												"color": "rgbEx(100, 100, 100)"
+											}
+										}
+									],
+									"sid": 230020892387734
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-touching-object",
+											"objectClass": "Touch",
+											"sid": 981495818652850,
+											"parameters": {
+												"object": "ButtonL"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-default-color",
+											"objectClass": "ButtonL",
+											"sid": 637096180550644,
+											"parameters": {
+												"color": "rgbEx(100, 100, 100)"
+											}
+										}
+									],
+									"sid": 785978569629861
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-touching-object",
+											"objectClass": "Touch",
+											"sid": 732144712786885,
+											"parameters": {
+												"object": "ButtonR"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-default-color",
+											"objectClass": "ButtonR",
+											"sid": 293809498347243,
+											"parameters": {
+												"color": "rgbEx(100, 100, 100)"
+											}
+										}
+									],
+									"sid": 253845029774192
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-touching-object",
+											"objectClass": "Touch",
+											"sid": 374213210487237,
+											"parameters": {
+												"object": "ButtonU"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-default-color",
+											"objectClass": "ButtonU",
+											"sid": 560281334563035,
+											"parameters": {
+												"color": "rgbEx(100, 100, 100)"
+											}
+										}
+									],
+									"sid": 479127427789716
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [],
+									"sid": 658575842912453,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 177952375638843,
+													"parameters": {
+														"gamepad": "0",
+														"button": "d-pad-right"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 711800740908795,
+													"parameters": {
+														"gamepad": "0",
+														"axis": "left-analog-x-axis",
+														"comparison": 5,
+														"value": "50"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 684108258910185,
+													"parameters": {
+														"name": "\"P1moveR\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 155149986423783,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 504946474023056,
+													"parameters": {
+														"gamepad": "0",
+														"button": "d-pad-left"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 142405470661516,
+													"parameters": {
+														"gamepad": "0",
+														"axis": "left-analog-x-axis",
+														"comparison": 3,
+														"value": "-50"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 653047068072171,
+													"parameters": {
+														"name": "\"P1MoveL\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 170606217454296,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 972638032910349,
+													"parameters": {
+														"gamepad": "0",
+														"button": "d-pad-up"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 369956281896914,
+													"parameters": {
+														"gamepad": "0",
+														"axis": "left-analog-y-axis",
+														"comparison": 3,
+														"value": "-25"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 392088836712323,
+													"parameters": {
+														"gamepad": "0",
+														"button": "button-x"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 536457549799688,
+													"parameters": {
+														"name": "\"P1Up\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 356796970019113,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 699345510218680,
+													"parameters": {
+														"gamepad": "0",
+														"button": "d-pad-down"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 502213074497509,
+													"parameters": {
+														"gamepad": "0",
+														"axis": "left-analog-y-axis",
+														"comparison": 5,
+														"value": "25"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 908200559521823,
+													"parameters": {
+														"name": "\"P1Down\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 656300799778812,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 770111373157140,
+													"parameters": {
+														"gamepad": "0",
+														"button": "button-a"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 636934110645116,
+													"parameters": {
+														"name": "\"P1A\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 502060525512395
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 584690889431957,
+													"parameters": {
+														"gamepad": "0",
+														"button": "button-b"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 854402724692060,
+													"parameters": {
+														"name": "\"P1B\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 677605145937102
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 430879736275664,
+													"parameters": {
+														"gamepad": "0",
+														"button": "right-shoulder-button"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 166786648920070,
+													"parameters": {
+														"gamepad": "0",
+														"button": "right-shoulder-trigger"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 212377564060762,
+													"parameters": {
+														"name": "\"P1C\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 547912935219526,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 242680419141964,
+													"parameters": {
+														"gamepad": "0",
+														"button": "left-shoulder-trigger"
+													}
+												},
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 874070331632810,
+													"parameters": {
+														"gamepad": "0",
+														"button": "left-shoulder-button"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 857716707719490,
+													"parameters": {
+														"name": "\"P1D\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 784480520204090,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 876847399825668,
+													"parameters": {
+														"gamepad": "0",
+														"button": "back-view"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 398139474112232,
+													"parameters": {
+														"name": "\"P1T\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 396158471083588
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 950804106653802,
+													"parameters": {
+														"gamepad": "0",
+														"button": "start-menu"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 984014400086946,
+													"parameters": {
+														"name": "\"Pause\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 878368397835570
+										}
+									]
+								}
+							],
+							"sid": 335441076199410
+						}
+					],
+					"sid": 562993806183322
+				},
+				{
+					"eventType": "comment",
+					"text": "explicare los controles en pc"
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Keyboard",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "P1_Controls",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "C1 es para el player 1, se identifica el key code gracias a los valores de la array, y asi llama una funcion especifica"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 347295809558427,
+											"parameters": {
+												"variable": "C1",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 734147722512676,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 861025999651971,
+													"parameters": {
+														"keycode": "keys.At(KEY_RIGHT,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 715547257902274,
+													"parameters": {
+														"name": "\"P1moveR\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 444846753449973
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 368837703729616,
+													"parameters": {
+														"keycode": "keys.At(KEY_LEFT,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 724172847731230,
+													"parameters": {
+														"name": "\"P1MoveL\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 256432530230341
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 792021790089150,
+													"parameters": {
+														"keycode": "keys.At(KEY_UP,K_KEYCODE)"
+													}
+												},
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 656650985888194,
+													"parameters": {
+														"keycode": "keys.At(KEY_Jump,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 702965119440068,
+													"parameters": {
+														"name": "\"P1Up\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 873053533840723,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 417019538694322,
+													"parameters": {
+														"keycode": "keys.At(KEY_DOWN,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 508244651787439,
+													"parameters": {
+														"name": "\"P1Down\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 229101407947939
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 799601518479143,
+													"parameters": {
+														"keycode": "keys.At(KEY_A,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 269053815965542,
+													"parameters": {
+														"name": "\"P1A\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 638441965873072
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 299817331234692,
+													"parameters": {
+														"keycode": "keys.At(KEY_B,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 594388384719615,
+													"parameters": {
+														"name": "\"P1B\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 112095158412811
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 883067520425239,
+													"parameters": {
+														"keycode": "keys.At(KEY_C,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 606246577318085,
+													"parameters": {
+														"name": "\"P1C\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 430949600837231
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 743104907505273,
+													"parameters": {
+														"keycode": "keys.At(KEY_D,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 608634554416696,
+													"parameters": {
+														"name": "\"P1D\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 887472250926928
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 916682065249358,
+													"parameters": {
+														"keycode": "keys.At(KEY_T,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 420849639243398,
+													"parameters": {
+														"name": "\"P1T\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 961255104003159
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 179978595211441,
+													"parameters": {
+														"keycode": "keys.At(KEY_PAUSE,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 644353937246732,
+													"parameters": {
+														"name": "\"Pause\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 778259145532690
+										}
+									]
+								},
+								{
+									"eventType": "comment",
+									"text": "lo mismo pero para control, se toma el boton del gamepad asignado al player"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 615729157525736,
+											"parameters": {
+												"variable": "C1",
+												"comparison": 5,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 851812178519268,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 117783661136867,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "d-pad-right"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 257345345509105,
+													"parameters": {
+														"gamepad": "C1-1",
+														"axis": "left-analog-x-axis",
+														"comparison": 5,
+														"value": "50"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 610891932102847,
+													"parameters": {
+														"name": "\"P1moveR\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 409412062818831,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 252704240370244,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "d-pad-left"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 217352497636177,
+													"parameters": {
+														"gamepad": "C1-1",
+														"axis": "left-analog-x-axis",
+														"comparison": 3,
+														"value": "-50"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 403675867870669,
+													"parameters": {
+														"name": "\"P1MoveL\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 507114005291920,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 861850009983215,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "d-pad-up"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 159130532287895,
+													"parameters": {
+														"gamepad": "C1-1",
+														"axis": "left-analog-y-axis",
+														"comparison": 3,
+														"value": "-25"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 609316367068584,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "button-x"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 252901096029476,
+													"parameters": {
+														"name": "\"P1Up\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 242452531694747,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 327003345724632,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "d-pad-down"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 808433269529701,
+													"parameters": {
+														"gamepad": "C1-1",
+														"axis": "left-analog-y-axis",
+														"comparison": 5,
+														"value": "25"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 560123880712332,
+													"parameters": {
+														"name": "\"P1Down\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 474536291014677,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 246997358354911,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "button-a"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 227058115058477,
+													"parameters": {
+														"name": "\"P1A\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 924158969492427
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 722870104054280,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "button-b"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 463678637920367,
+													"parameters": {
+														"name": "\"P1B\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 370618164274463
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 204422065419155,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "right-shoulder-button"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 686128985632931,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "right-shoulder-trigger"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 891383699704797,
+													"parameters": {
+														"name": "\"P1C\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 162532801407293,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 953850738171100,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "left-shoulder-trigger"
+													}
+												},
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 142270175970320,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "left-shoulder-button"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 396698483855503,
+													"parameters": {
+														"name": "\"P1D\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 778051028718154,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 420220487703146,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "back-view"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 628593209570592,
+													"parameters": {
+														"name": "\"P1T\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 170214605334004
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 120932905041388,
+													"parameters": {
+														"gamepad": "C1-1",
+														"button": "start-menu"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 557222378389712,
+													"parameters": {
+														"name": "\"Pause\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 104307076604970
+										}
+									]
+								}
+							],
+							"sid": 395561110494029
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "P2_Controls",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 717311146265254,
+											"parameters": {
+												"variable": "C2",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 560384972749153,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 902770755386574,
+													"parameters": {
+														"keycode": "keys.At(KEY_RIGHT2,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 290199298903984,
+													"parameters": {
+														"name": "\"P2moveR\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 447744453127507
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 694065952147234,
+													"parameters": {
+														"keycode": "keys.At(KEY_LEFT2,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 137012861250696,
+													"parameters": {
+														"name": "\"P2MoveL\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 170982972835211
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 706741081576025,
+													"parameters": {
+														"keycode": "keys.At(KEY_UP2,K_KEYCODE)"
+													}
+												},
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 264161416041945,
+													"parameters": {
+														"keycode": "keys.At(KEY_Jump2,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 550815567785916,
+													"parameters": {
+														"name": "\"P2Up\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 732755769149823,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 722059024927724,
+													"parameters": {
+														"keycode": "keys.At(KEY_DOWN2,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 378961066605367,
+													"parameters": {
+														"name": "\"P2Down\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 288958117830582
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 690916595605680,
+													"parameters": {
+														"keycode": "keys.At(KEY_A2,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 737863413544459,
+													"parameters": {
+														"name": "\"P2A\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 509725474613970
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 806383257189326,
+													"parameters": {
+														"keycode": "keys.At(KEY_B2,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 754532912868192,
+													"parameters": {
+														"name": "\"P2B\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 972608877347771
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 395972280286767,
+													"parameters": {
+														"keycode": "keys.At(KEY_C2,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 216046805119176,
+													"parameters": {
+														"name": "\"P2C\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 662838571332445
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 862451363654488,
+													"parameters": {
+														"keycode": "keys.At(KEY_C2,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 178647865839395,
+													"parameters": {
+														"name": "\"P2D\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 582416244280993
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 225205233690211,
+													"parameters": {
+														"keycode": "keys.At(KEY_T2,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 650913220195600,
+													"parameters": {
+														"name": "\"P2T\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 234127916921121
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 388559882413249,
+													"parameters": {
+														"keycode": "keys.At(KEY_PAUSE2,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 342195825278129,
+													"parameters": {
+														"name": "\"Pause\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 173039360463704
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 346777740510534,
+											"parameters": {
+												"variable": "C2",
+												"comparison": 5,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 680284257120046,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 727135528222542,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "d-pad-right"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 343091617462849,
+													"parameters": {
+														"gamepad": "C2-1",
+														"axis": "left-analog-x-axis",
+														"comparison": 5,
+														"value": "50"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 405632547821281,
+													"parameters": {
+														"name": "\"P2moveR\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 300883452076650,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 320109358293086,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "d-pad-left"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 702721899716467,
+													"parameters": {
+														"gamepad": "C2-1",
+														"axis": "left-analog-x-axis",
+														"comparison": 3,
+														"value": "-50"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 113939765472244,
+													"parameters": {
+														"name": "\"P2MoveL\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 339848746339908,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 129712647895705,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "d-pad-up"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 663358415458445,
+													"parameters": {
+														"gamepad": "C2-1",
+														"axis": "left-analog-y-axis",
+														"comparison": 3,
+														"value": "-25"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 684523455560085,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "button-x"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 129453865453206,
+													"parameters": {
+														"name": "\"P2Up\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 232667220548511,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 188158747034774,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "d-pad-down"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 249392380287649,
+													"parameters": {
+														"gamepad": "C2-1",
+														"axis": "left-analog-y-axis",
+														"comparison": 5,
+														"value": "25"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 729326391206277,
+													"parameters": {
+														"name": "\"P2Down\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 950264431212128,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 340605890299297,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "button-a"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 679076707588032,
+													"parameters": {
+														"name": "\"P2A\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 884593954615865
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 335981181893371,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "button-b"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 638150209698618,
+													"parameters": {
+														"name": "\"P2B\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 604406173343150
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 271862233062659,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "right-shoulder-button"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 354342972678907,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "right-shoulder-trigger"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 277515707967907,
+													"parameters": {
+														"name": "\"P2C\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 427468863504996,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 911046407558461,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "left-shoulder-trigger"
+													}
+												},
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 771205484345842,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "left-shoulder-button"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 670389675597125,
+													"parameters": {
+														"name": "\"P2D\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 592824330330034,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 534143244270746,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "back-view"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 596708258418362,
+													"parameters": {
+														"name": "\"P2T\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 255567728993252
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 532280696539656,
+													"parameters": {
+														"gamepad": "C2-1",
+														"button": "start-menu"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 880975251983228,
+													"parameters": {
+														"name": "\"Pause\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 696486402532985
+										}
+									]
+								}
+							],
+							"sid": 719304730400568
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "P3_Controls",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 630494333570576,
+											"parameters": {
+												"variable": "C3",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 489486892285026,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 470121782636609,
+													"parameters": {
+														"keycode": "keys.At(KEY_RIGHT3,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 489026287527791,
+													"parameters": {
+														"name": "\"P3moveR\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 828007320516933
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 512714179905730,
+													"parameters": {
+														"keycode": "keys.At(KEY_LEFT3,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 439345889884540,
+													"parameters": {
+														"name": "\"P3MoveL\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 808060050380801
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 736990172340110,
+													"parameters": {
+														"keycode": "keys.At(KEY_UP3,K_KEYCODE)"
+													}
+												},
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 502667696484102,
+													"parameters": {
+														"keycode": "keys.At(KEY_Jump3,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 898124861025192,
+													"parameters": {
+														"name": "\"P3Up\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 259713804439106,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 660136244746899,
+													"parameters": {
+														"keycode": "keys.At(KEY_DOWN3,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 294300206047328,
+													"parameters": {
+														"name": "\"P3Down\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 373721565315172
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 750630734256989,
+													"parameters": {
+														"keycode": "keys.At(KEY_A3,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 553182290492541,
+													"parameters": {
+														"name": "\"P3A\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 539121367803348
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 761594595787044,
+													"parameters": {
+														"keycode": "keys.At(KEY_B3,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 902644075572302,
+													"parameters": {
+														"name": "\"P3B\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 406180215118950
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 812994582651864,
+													"parameters": {
+														"keycode": "keys.At(KEY_C3,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 284965912676862,
+													"parameters": {
+														"name": "\"P3C\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 387959607231210
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 236986751750145,
+													"parameters": {
+														"keycode": "keys.At(KEY_C3,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 833058291435217,
+													"parameters": {
+														"name": "\"P3D\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 845937277284746
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 475928610867878,
+													"parameters": {
+														"keycode": "keys.At(KEY_T3,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 267159361096519,
+													"parameters": {
+														"name": "\"P3T\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 265467121570636
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 690164262585175,
+													"parameters": {
+														"keycode": "keys.At(KEY_PAUSE3,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 535696237927200,
+													"parameters": {
+														"name": "\"Pause\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 337121330039460
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 479909480523717,
+											"parameters": {
+												"variable": "C3",
+												"comparison": 5,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 140100147195101,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 661124723506690,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "d-pad-right"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 839852660395048,
+													"parameters": {
+														"gamepad": "C3-1",
+														"axis": "left-analog-x-axis",
+														"comparison": 5,
+														"value": "50"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 938169403581809,
+													"parameters": {
+														"name": "\"P3moveR\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 907519026003380,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 809120406658741,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "d-pad-left"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 330386759623169,
+													"parameters": {
+														"gamepad": "C3-1",
+														"axis": "left-analog-x-axis",
+														"comparison": 3,
+														"value": "-50"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 256711694278250,
+													"parameters": {
+														"name": "\"P3MoveL\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 720801925777951,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 578985573333707,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "d-pad-up"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 690015285045474,
+													"parameters": {
+														"gamepad": "C3-1",
+														"axis": "left-analog-y-axis",
+														"comparison": 3,
+														"value": "-25"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 937263769775415,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "button-x"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 885927250164008,
+													"parameters": {
+														"name": "\"P3Up\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 738931656209838,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 780156893559413,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "d-pad-down"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 344268471540543,
+													"parameters": {
+														"gamepad": "C3-1",
+														"axis": "left-analog-y-axis",
+														"comparison": 5,
+														"value": "25"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 601355547194474,
+													"parameters": {
+														"name": "\"P3Down\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 636094049771576,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 189043569061910,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "button-a"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 293471721991704,
+													"parameters": {
+														"name": "\"P3A\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 866244409864449
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 702642989169517,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "button-b"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 539443643145112,
+													"parameters": {
+														"name": "\"P3B\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 698574106657840
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 914493187604391,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "right-shoulder-button"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 956009729614742,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "right-shoulder-trigger"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 403921361242544,
+													"parameters": {
+														"name": "\"P3C\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 320703905089922,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 341169734334273,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "left-shoulder-trigger"
+													}
+												},
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 678985069437586,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "left-shoulder-button"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 849281022532908,
+													"parameters": {
+														"name": "\"P3D\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 229630073853455,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 385905967506566,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "back-view"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 359395482073467,
+													"parameters": {
+														"name": "\"P3T\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 709995803508980
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 574113144241905,
+													"parameters": {
+														"gamepad": "C3-1",
+														"button": "start-menu"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 659003362798064,
+													"parameters": {
+														"name": "\"Pause\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 195800278664863
+										}
+									]
+								}
+							],
+							"sid": 279566288837336
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "P4_Controls",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 539101983655475,
+											"parameters": {
+												"variable": "C4",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 958043970345432,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 845770091830663,
+													"parameters": {
+														"keycode": "keys.At(KEY_RIGHT4,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 371335113326911,
+													"parameters": {
+														"name": "\"P4moveR\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 352176302702095
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 307118217482454,
+													"parameters": {
+														"keycode": "keys.At(KEY_LEFT4,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 157314499699602,
+													"parameters": {
+														"name": "\"P4MoveL\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 279538599197987
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 994011457740991,
+													"parameters": {
+														"keycode": "keys.At(KEY_UP4,K_KEYCODE)"
+													}
+												},
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 437254690962637,
+													"parameters": {
+														"keycode": "keys.At(KEY_Jump4,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 260816370935790,
+													"parameters": {
+														"name": "\"P4Up\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 285513494526950,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 876624860635906,
+													"parameters": {
+														"keycode": "keys.At(KEY_DOWN4,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 264014301870200,
+													"parameters": {
+														"name": "\"P4Down\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 945393753861498
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 978240350034276,
+													"parameters": {
+														"keycode": "keys.At(KEY_A4,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 598944992771670,
+													"parameters": {
+														"name": "\"P4A\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 939779111510437
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 312901063741672,
+													"parameters": {
+														"keycode": "keys.At(KEY_B4,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 729540459485331,
+													"parameters": {
+														"name": "\"P4B\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 458555509717868
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-code-is-down",
+													"objectClass": "Keyboard",
+													"sid": 960873524113334,
+													"parameters": {
+														"keycode": "keys.At(KEY_C4,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 377717660269828,
+													"parameters": {
+														"name": "\"P4C\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 981837493082448
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 715822978766438,
+													"parameters": {
+														"keycode": "keys.At(KEY_C4,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 653531998397433,
+													"parameters": {
+														"name": "\"P4D\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 720799311264096
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 497640766665265,
+													"parameters": {
+														"keycode": "keys.At(KEY_T4,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 623327601271620,
+													"parameters": {
+														"name": "\"P4T\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 863024977739224
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-code-pressed",
+													"objectClass": "Keyboard",
+													"sid": 646319823892033,
+													"parameters": {
+														"keycode": "keys.At(KEY_PAUSE4,K_KEYCODE)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 711991038993842,
+													"parameters": {
+														"name": "\"Pause\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 635822752955067
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 990998263079013,
+											"parameters": {
+												"variable": "C4",
+												"comparison": 5,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 526048041258487,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 850353778236286,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "d-pad-right"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 145601293879069,
+													"parameters": {
+														"gamepad": "C4-1",
+														"axis": "left-analog-x-axis",
+														"comparison": 5,
+														"value": "50"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 394318851697443,
+													"parameters": {
+														"name": "\"P4moveR\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 545377616817025,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 997290117630813,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "d-pad-left"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 835134753576106,
+													"parameters": {
+														"gamepad": "C4-1",
+														"axis": "left-analog-x-axis",
+														"comparison": 3,
+														"value": "-50"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 282482511924305,
+													"parameters": {
+														"name": "\"P4MoveL\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 483571355910929,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 626812822267295,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "d-pad-up"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 583286469970170,
+													"parameters": {
+														"gamepad": "C4-1",
+														"axis": "left-analog-y-axis",
+														"comparison": 3,
+														"value": "-25"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 751634582161253,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "button-x"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 264198950220221,
+													"parameters": {
+														"name": "\"P4Up\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 329308047578815,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 185393264287514,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "d-pad-down"
+													}
+												},
+												{
+													"id": "compare-axis",
+													"objectClass": "Gamepad",
+													"sid": 147308609105012,
+													"parameters": {
+														"gamepad": "C4-1",
+														"axis": "left-analog-y-axis",
+														"comparison": 5,
+														"value": "25"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 131539109923237,
+													"parameters": {
+														"name": "\"P4Down\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 180427799577182,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 179390168772951,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "button-a"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 128961930530152,
+													"parameters": {
+														"name": "\"P4A\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 147913772692645
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 102065871465648,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "button-b"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 916575771350410,
+													"parameters": {
+														"name": "\"P4B\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 627135468014580
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 635882095125196,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "right-shoulder-button"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 684723405650832,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "right-shoulder-trigger"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 142926672770271,
+													"parameters": {
+														"name": "\"P4C\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 111331352238834,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 765724606620727,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "left-shoulder-trigger"
+													}
+												},
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 138714523602732,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "left-shoulder-button"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 215897740558450,
+													"parameters": {
+														"name": "\"P4D\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 168920162114633,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 377243998924722,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "back-view"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 722619361034828,
+													"parameters": {
+														"name": "\"P4T\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 504905853733347
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 688073714346004,
+													"parameters": {
+														"gamepad": "C4-1",
+														"button": "start-menu"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 375910132004790,
+													"parameters": {
+														"name": "\"Pause\"",
+														"parameter-n": []
+													}
+												}
+											],
+											"sid": 643116260694573
+										}
+									]
+								}
+							],
+							"sid": 903336691257697
+						}
+					],
+					"sid": 428609906394952
+				}
+			],
+			"sid": 527219918621687
+		}
+	],
+	"sid": 697983142659581
+}

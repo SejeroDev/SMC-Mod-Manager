@@ -1,0 +1,6289 @@
+{
+	"name": "Optons",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Controls"
+		},
+		{
+			"eventType": "comment",
+			"text": "Esta event sheet es compartida por todos las otras layout de nombre control"
+		},
+		{
+			"eventType": "variable",
+			"name": "GamepadCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 423042335311496
+		},
+		{
+			"eventType": "variable",
+			"name": "LDM",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 204477400176209
+		},
+		{
+			"eventType": "variable",
+			"name": "IH",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 255854534540581
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 753596590132047
+				}
+			],
+			"actions": [
+				{
+					"id": "set-image-offset-x",
+					"objectClass": "TiledBackground3",
+					"sid": 552132663667640,
+					"parameters": {
+						"offset-x": "Self.ImageOffsetX+0.25"
+					}
+				},
+				{
+					"id": "set-image-offset-y",
+					"objectClass": "TiledBackground3",
+					"sid": 367607063639030,
+					"parameters": {
+						"offset-y": "Self.ImageOffsetY+0.25"
+					}
+				},
+				{
+					"id": "set-image-offset-y",
+					"objectClass": "TiledBackground",
+					"sid": 175856530207923,
+					"parameters": {
+						"offset-y": "Self.ImageOffsetY+0.25"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Hand",
+					"sid": 672664334238231
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 196978996743692,
+					"parameters": {
+						"variable": "GamepadCount",
+						"value": "Gamepad.GamepadCount"
+					}
+				}
+			],
+			"sid": 688625997401020
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 763095524597373
+				}
+			],
+			"actions": [
+				{
+					"id": "gamepad-vibrate",
+					"objectClass": "Gamepad",
+					"sid": 620333085097764,
+					"parameters": {
+						"gamepad": "0",
+						"duration": "500",
+						"weak-magnitude": "100",
+						"strong-magnitude": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "trans",
+					"sid": 625282564256120,
+					"parameters": {
+						"x": "Self.X",
+						"y": "-192"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "trans",
+					"sid": 969345618720184,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "-488",
+						"time": "0.3",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 188396396150738,
+					"parameters": {
+						"variable": "Menu",
+						"value": "0"
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 358510161015066,
+					"parameters": {
+						"key": "\"FS\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 302051231460786,
+					"parameters": {
+						"key": "\"LDM\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 717790220564095,
+					"parameters": {
+						"key": "\"IH\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 566652284344179,
+					"parameters": {
+						"key": "\"Key_Mapper\""
+					}
+				}
+			],
+			"sid": 216861266333242,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 881331193136357,
+							"parameters": {
+								"object": "Button2"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont2",
+							"sid": 738481812525306,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "Button2.ID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "SpriteFont2",
+							"sid": 682361816526556,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Button2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 900255351081541
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-android",
+							"objectClass": "PlatformInfo",
+							"sid": 728986288207291
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 211313703464307,
+							"parameters": {
+								"group-name": "\"movil3\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 465220715978974
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-android",
+							"objectClass": "PlatformInfo",
+							"sid": 602312901951379,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 271782433660696,
+							"parameters": {
+								"group-name": "\"movil3\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 729316311750770
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite14",
+					"sid": 153752744022901,
+					"parameters": {
+						"instance-variable": "ID",
+						"comparison": 3,
+						"value": "GamepadCount"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite14",
+					"sid": 386927801734900,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 439902484730314
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite14",
+					"sid": 391002944467466,
+					"parameters": {
+						"instance-variable": "ID",
+						"comparison": 4,
+						"value": "GamepadCount"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite14",
+					"sid": 320681623294810,
+					"parameters": {
+						"instance-variable": "ID",
+						"comparison": 0,
+						"value": "0"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite14",
+					"sid": 231711706687546,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 550509727650409
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 603887794429899,
+					"parameters": {
+						"key": "\"SSB_keys\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 517910332702775,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 592107841534086,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 508230917444906,
+							"parameters": {
+								"text": "keyboard.StringFromKeyCode(keys.At((SpriteFont.ID),K_KEYCODE))"
+							}
+						}
+					],
+					"sid": 749874908684717
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 395727525947376,
+					"parameters": {
+						"key": "\"SSB_keys\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 292868299234803,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 454423032598648,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 460510408898695,
+							"parameters": {
+								"text": "keyboard.StringFromKeyCode(keys.At((SpriteFont.ID),K_KEYCODE))"
+							}
+						}
+					],
+					"sid": 193070028568740
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite16",
+					"sid": 782648861897553,
+					"parameters": {
+						"object": "Sprite11"
+					}
+				},
+				{
+					"id": "is-pinned",
+					"objectClass": "Sprite16",
+					"sid": 514407335132678,
+					"behaviorType": "Pin",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Sprite16",
+					"sid": 315187225585978,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Sprite11",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 193448521394038
+		},
+		{
+			"eventType": "comment",
+			"text": "controles"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Hand",
+					"sid": 600885255477477,
+					"parameters": {
+						"instance-variable": "PLAYER",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 120634512889303,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 456233359738151,
+							"parameters": {
+								"name": "\"P1Up\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Hand",
+							"sid": 450636976870893,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 909918005533865,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 701694945606329,
+							"parameters": {
+								"name": "\"P1Down\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Hand",
+							"sid": 427992965981743,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 534644889380315,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 204094592595234,
+							"parameters": {
+								"name": "\"P1MoveL\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Hand",
+							"sid": 279615446918283,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 818225084259196,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 467161396876840,
+							"parameters": {
+								"name": "\"P1MoveR\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Hand",
+							"sid": 315527302231421,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 617778201181843,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 183537893900034,
+							"parameters": {
+								"name": "\"P1A\""
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Hand",
+							"sid": 123212626520575,
+							"parameters": {
+								"object": "Sprite11"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite11",
+							"sid": 113598984737987,
+							"parameters": {
+								"object": "Sprite16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 654491348580248,
+							"parameters": {
+								"variable": "Menu",
+								"value": "Sprite11.Menu"
+							}
+						}
+					],
+					"sid": 402538994190809,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "SpriteFont",
+									"sid": 433820263739477,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "SpriteFont",
+									"sid": 290806222717023,
+									"parameters": {
+										"text": "keyboard.StringFromKeyCode(keys.At((SpriteFont.ID),K_KEYCODE))"
+									}
+								}
+							],
+							"sid": 287854536098214
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "al tocar A"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-code-pressed",
+							"objectClass": "Keyboard",
+							"sid": 673291902234486,
+							"parameters": {
+								"keycode": "keys.At(KEY_A,K_KEYCODE)"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Hand",
+							"sid": 499692604208185,
+							"parameters": {
+								"object": "Sprite14"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 992321454322972,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 287560137971506,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 575756228358000,
+									"parameters": {
+										"variable": "C1",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 746686965882365,
+									"parameters": {
+										"variable": "MenuSelected",
+										"comparison": 0,
+										"value": "1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 846019667082290,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Sprite14",
+											"sid": 750796615682723,
+											"parameters": {
+												"object": "SpriteFont"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 456257971743991,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "SpriteFont",
+											"sid": 100163744112257,
+											"parameters": {
+												"text": "\"...\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 260375672529915,
+											"parameters": {
+												"variable": "MenuSelected",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 191586937745646
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 159032004955245,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 577545111563985,
+									"parameters": {
+										"variable": "C2",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 229656371789614,
+									"parameters": {
+										"variable": "MenuSelected",
+										"comparison": 0,
+										"value": "1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 786087969248909,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Sprite14",
+											"sid": 711043699519165,
+											"parameters": {
+												"object": "SpriteFont"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 973724661248019,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "SpriteFont",
+											"sid": 202413229548236,
+											"parameters": {
+												"text": "\"...\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 699720892253991,
+											"parameters": {
+												"variable": "MenuSelected",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 514898495509811
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 147795915966636,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 192486404275760,
+									"parameters": {
+										"variable": "C3",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 327403554601157,
+									"parameters": {
+										"variable": "MenuSelected",
+										"comparison": 0,
+										"value": "1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 947846321580379,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Sprite14",
+											"sid": 688490447113162,
+											"parameters": {
+												"object": "SpriteFont"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 558994131333768,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "SpriteFont",
+											"sid": 796462053002295,
+											"parameters": {
+												"text": "\"...\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 592550517067167,
+											"parameters": {
+												"variable": "MenuSelected",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 295616619026923
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 614169225447138,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 571388021187573,
+									"parameters": {
+										"variable": "C4",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 253894451802958,
+									"parameters": {
+										"variable": "MenuSelected",
+										"comparison": 0,
+										"value": "1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 587561029661366,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Sprite14",
+											"sid": 273408341741077,
+											"parameters": {
+												"object": "SpriteFont"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 833944865912576,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "SpriteFont",
+											"sid": 851124474500298,
+											"parameters": {
+												"text": "\"...\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 931161280384158,
+											"parameters": {
+												"variable": "MenuSelected",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 711352298951028
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 489703736799829,
+							"parameters": {
+								"name": "\"P1A\""
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Hand",
+							"sid": 432835765787935,
+							"parameters": {
+								"object": "Sprite14"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 666923368124644,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 944852029439734,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Sprite14",
+									"sid": 481403217873839
+								}
+							],
+							"actions": [],
+							"sid": 839267521460861,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 945226472003929,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 882315579143483,
+											"parameters": {
+												"variable": "C1",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 304557861417420,
+											"parameters": {
+												"key": "\"C1\"",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 489040528375566
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 854530500121064,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 404593493306252,
+											"parameters": {
+												"variable": "C2",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 427682265415935,
+											"parameters": {
+												"key": "\"C2\"",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 406766759628037
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 640550718216261,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 477447635261132,
+											"parameters": {
+												"variable": "C3",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 875690555449047,
+											"parameters": {
+												"key": "\"C3\"",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 986293377062912
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 363981258611421,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 241627381055835,
+											"parameters": {
+												"variable": "C4",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 334252000799552,
+											"parameters": {
+												"key": "\"C4\"",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 497738705637160
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 597045721713837,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 5,
+										"value": "1"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Sprite14",
+									"sid": 769200807263921
+								}
+							],
+							"actions": [],
+							"sid": 162575234739845,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 984053838891200,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 768795752420224,
+											"parameters": {
+												"variable": "C1",
+												"value": "Sprite14.ID"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 607837347245167,
+											"parameters": {
+												"key": "\"C1\"",
+												"value": "Sprite14.ID"
+											}
+										}
+									],
+									"sid": 863595926454798
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 758167423739273,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 157666547984206,
+											"parameters": {
+												"variable": "C2",
+												"value": "Sprite14.ID"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 923151220840257,
+											"parameters": {
+												"key": "\"C2\"",
+												"value": "Sprite14.ID"
+											}
+										}
+									],
+									"sid": 143878933303793
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 275077273379977,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 790956799928787,
+											"parameters": {
+												"variable": "C3",
+												"value": "Sprite14.ID"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 618396817252713,
+											"parameters": {
+												"key": "\"C3\"",
+												"value": "Sprite14.ID"
+											}
+										}
+									],
+									"sid": 991960717010090
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 542561498658686,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 875836250386380,
+											"parameters": {
+												"variable": "C4",
+												"value": "Sprite14.ID"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 892826779545665,
+											"parameters": {
+												"key": "\"C4\"",
+												"value": "Sprite14.ID"
+											}
+										}
+									],
+									"sid": 639520522353179
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 815359025566912,
+							"parameters": {
+								"name": "\"P1A\""
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Hand",
+							"sid": 836908327973826,
+							"parameters": {
+								"object": "SpriteFont"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 905123699834551,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 232146353100736,
+									"parameters": {
+										"unique-id": "145"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Hand",
+									"sid": 510428254306615
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "trans",
+									"sid": 847084591958357,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-192",
+										"time": "0.3",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 528176744199644,
+									"parameters": {
+										"seconds": "0.6"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 380679636015326,
+									"parameters": {
+										"layout": "Main menu"
+									}
+								}
+							],
+							"sid": 113172616700392
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 568250334242348,
+									"parameters": {
+										"unique-id": "689"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Hand",
+									"sid": 772000121913342
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "trans",
+									"sid": 690892163205028,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-192",
+										"time": "0.3",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 405534471033229,
+									"parameters": {
+										"seconds": "0.6"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 647993519424346,
+									"parameters": {
+										"layout": "Main menu"
+									}
+								}
+							],
+							"sid": 917387122426579
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 269484485898959,
+									"parameters": {
+										"unique-id": "1113"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Hand",
+									"sid": 533188492381834
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "trans",
+									"sid": 983180932102285,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-192",
+										"time": "0.3",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 489404371787522,
+									"parameters": {
+										"seconds": "0.6"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 743480094143086,
+									"parameters": {
+										"layout": "Main menu"
+									}
+								}
+							],
+							"sid": 779538718699547
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 836203091368551,
+									"parameters": {
+										"unique-id": "146"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 930159755318084,
+									"parameters": {
+										"key": "\"SSB_keys\"",
+										"value": "Keys.AsJSON"
+									}
+								}
+							],
+							"sid": 289575076486745,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "tween-one-property",
+											"objectClass": "Saved",
+											"sid": 701543423514066,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"1\"",
+												"property": "offsetY",
+												"end-value": "248",
+												"time": "0.25",
+												"ease": "default",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										}
+									],
+									"sid": 493937031069188
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 852731606630365,
+									"parameters": {
+										"unique-id": "147"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "\"Default\"",
+									"sid": 995939350162033
+								}
+							],
+							"sid": 474221571112358
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 200917135245930,
+							"parameters": {
+								"name": "\"P1A\""
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Hand",
+							"sid": 762307630335983,
+							"parameters": {
+								"object": "OnOff"
+							}
+						},
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "OnOff",
+							"sid": 314486134032577,
+							"parameters": {
+								"which": "nearest",
+								"x": "Hand.x",
+								"y": "Hand.Y"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 895092813143586,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 888181487629690,
+									"parameters": {
+										"unique-id": "659"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 478918958356653,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "OnOff",
+											"sid": 780044757116508,
+											"parameters": {
+												"animation": "\"Animation 1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 703164606790065,
+											"parameters": {
+												"key": "\"FS\"",
+												"value": "\"1\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 781712108826322,
+											"parameters": {
+												"seconds": "0.25"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "OnOff",
+											"sid": 417294752311845,
+											"parameters": {
+												"animation": "\"Animation 2\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-fullscreen-scaling",
+											"objectClass": "System",
+											"sid": 224486141676705,
+											"parameters": {
+												"fullscreen-scaling": "high-quality"
+											}
+										}
+									],
+									"sid": 901910788774848
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "OnOff",
+											"sid": 179114348944382,
+											"parameters": {
+												"animation": "\"Animation 2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 263905226897297,
+											"parameters": {
+												"key": "\"FS\"",
+												"value": "\"0\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 228265884741224,
+											"parameters": {
+												"seconds": "0.25"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "OnOff",
+											"sid": 157817372203656,
+											"parameters": {
+												"animation": "\"Animation 1\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-fullscreen-scaling",
+											"objectClass": "System",
+											"sid": 803361424446298,
+											"parameters": {
+												"fullscreen-scaling": "low-quality"
+											}
+										}
+									],
+									"sid": 456921419415317
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 484556828323732,
+									"parameters": {
+										"unique-id": "658"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 397366723338378,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "OnOff",
+											"sid": 984212618019626,
+											"parameters": {
+												"animation": "\"Animation 1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 719407116651276,
+											"parameters": {
+												"seconds": "0.25"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "OnOff",
+											"sid": 589969203909844,
+											"parameters": {
+												"animation": "\"Animation 2\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 636874482351499,
+											"parameters": {
+												"key": "\"LDM\"",
+												"value": "\"1\""
+											}
+										}
+									],
+									"sid": 206296315087210
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "OnOff",
+											"sid": 788075771830673,
+											"parameters": {
+												"animation": "\"Animation 2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 573978115094667,
+											"parameters": {
+												"seconds": "0.25"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "OnOff",
+											"sid": 341239156140058,
+											"parameters": {
+												"animation": "\"Animation 1\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 698887650311746,
+											"parameters": {
+												"key": "\"LDM\"",
+												"value": "\"0\""
+											}
+										}
+									],
+									"sid": 814447106469864
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 137403239592563,
+					"parameters": {
+						"object": "Sprite14"
+					}
+				},
+				{
+					"id": "pick-nearestfurthest",
+					"objectClass": "Sprite14",
+					"sid": 629151816215687,
+					"parameters": {
+						"which": "nearest",
+						"x": "Hand.X-8",
+						"y": "Hand.Y-8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite14",
+					"sid": 782163505486595,
+					"parameters": {
+						"opacity": "50"
+					}
+				}
+			],
+			"sid": 264862645520696
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 862900912913171,
+					"parameters": {
+						"object": "Sprite14"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 345516732414468,
+					"parameters": {
+						"object": "Sprite14"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite14",
+					"sid": 307690147331582,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 532646090215288
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Saved",
+					"sid": 760268363566952,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 173985096976076,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Saved",
+					"sid": 509869928027908,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"2\"",
+						"property": "offsetY",
+						"end-value": "304",
+						"time": "0.25",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 416644361001471
+		},
+		{
+			"eventType": "comment",
+			"text": "seleccion de input"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 984899738414495
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 104191420916280,
+					"parameters": {
+						"variable": "MenuSelected",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 539372876046058,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "SpriteFont",
+							"sid": 282354108814411,
+							"parameters": {
+								"text-to-compare": "\"...\"",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 623693562981029,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Keys",
+							"sid": 750626255607086,
+							"parameters": {
+								"x": "SpriteFont.ID",
+								"y": "K_KEYCODE",
+								"value": "Keyboard.LastKeyCode"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 749600700360583,
+							"parameters": {
+								"text": "keyboard.StringFromKeyCode(keys.At((SpriteFont.ID),K_KEYCODE))"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 363334921119059,
+							"parameters": {
+								"variable": "MenuSelected",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 420972239020456
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 445676608558817,
+					"parameters": {
+						"key": 8
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "\"Default\"",
+					"sid": 428900874169279
+				}
+			],
+			"sid": 232288554110095
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 158663742948541,
+					"parameters": {
+						"object": "Sprite11"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Hand",
+					"sid": 479925256110002,
+					"parameters": {
+						"animation": "\"Point2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite16",
+					"sid": 180877166523863,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Exclusion\""
+					}
+				}
+			],
+			"sid": 306610671854160
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 146679530275396,
+					"parameters": {
+						"object": "Sprite14"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Hand",
+					"sid": 266308965443179,
+					"parameters": {
+						"animation": "\"Point2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 438588373178811
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 582322300168090,
+					"parameters": {
+						"object": "OnOff"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Hand",
+					"sid": 561227439870278,
+					"parameters": {
+						"animation": "\"Point2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 216079128340877
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 576330231863251,
+					"parameters": {
+						"object": "Sprite14"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 381335009922392,
+					"parameters": {
+						"object": "Sprite11"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 608317760965216,
+					"parameters": {
+						"object": "OnOff"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Hand",
+					"sid": 350769250206013,
+					"parameters": {
+						"animation": "\"Open\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 564701770567761
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite11",
+					"sid": 273125238375248,
+					"parameters": {
+						"instance-variable": "Menu",
+						"comparison": 0,
+						"value": "Menu"
+					}
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 497093102618351,
+					"parameters": {
+						"unique-id": "91"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 409617127487439,
+					"parameters": {
+						"unique-id": "144"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 306512998862549,
+					"parameters": {
+						"unique-id": "142"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 399437802576059,
+					"parameters": {
+						"unique-id": "143"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 966956362559608,
+					"parameters": {
+						"unique-id": "1112"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 700113364061275,
+					"parameters": {
+						"unique-id": "1118"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 467837930721388,
+					"parameters": {
+						"unique-id": "1119"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 113018690118907,
+					"parameters": {
+						"unique-id": "1120"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite11",
+					"sid": 307553007586429,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "48",
+						"time": "0.25",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 548502784504568
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite11",
+					"sid": 708552069599279,
+					"parameters": {
+						"instance-variable": "Menu",
+						"comparison": 0,
+						"value": "Menu"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 940614049697716,
+					"parameters": {
+						"unique-id": "91"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 544380308344776,
+					"parameters": {
+						"unique-id": "144"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 715148719313910,
+					"parameters": {
+						"unique-id": "142"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 534826004859311,
+					"parameters": {
+						"unique-id": "143"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 613866753174930,
+					"parameters": {
+						"unique-id": "638"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 793263859839060,
+					"parameters": {
+						"unique-id": "688"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 592588092082235,
+					"parameters": {
+						"unique-id": "1112"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 820501968694690,
+					"parameters": {
+						"unique-id": "1118"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 887163287467183,
+					"parameters": {
+						"unique-id": "1119"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Sprite11",
+					"sid": 650982123007853,
+					"parameters": {
+						"unique-id": "1120"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite11",
+					"sid": 814584420015215,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "32",
+						"time": "0.25",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 648996797072918
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 138314158542787,
+					"parameters": {
+						"object": "Sprite11"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 437133502714419,
+					"parameters": {
+						"object": "Sprite11"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 873776425699828,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite11",
+							"sid": 361074845891247,
+							"parameters": {
+								"object": "Sprite16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Sprite16",
+							"sid": 653168383560351,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Exclusion\""
+							}
+						}
+					],
+					"sid": 759178071160846
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 784745812822236,
+					"parameters": {
+						"variable": "Menu",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 260076956041226,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 227227626088166,
+							"parameters": {
+								"variable": "C1",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 300649124747844,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 641586460945831,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 416315306081148,
+									"parameters": {
+										"animation": "\"Animation 4\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 947308688195541
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 590913705712938,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 5,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 282843325508068,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 938762027354718
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 216518784464696,
+							"parameters": {
+								"variable": "C1",
+								"comparison": 0,
+								"value": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 431911442948464,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 531701737950083,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 635069920567201,
+									"parameters": {
+										"animation": "\"Animation 3\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 143916639196781
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 117851014922693,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "C1"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 996095924065262,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 209058989760357,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 844490751008990,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 805397597578924
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 723012277999592,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "C1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 905144139472877,
+									"parameters": {
+										"animation": "\"Animation 5\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 446959396197369
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Jump"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 991630021015168,
+							"parameters": {
+								"unique-id": "150"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 356983649341786,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "42"
+							}
+						}
+					],
+					"sid": 625416629144902
+				},
+				{
+					"eventType": "comment",
+					"text": "Up"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 199693583914734,
+							"parameters": {
+								"unique-id": "103"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 971179517693630,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "8"
+							}
+						}
+					],
+					"sid": 988002298761169
+				},
+				{
+					"eventType": "comment",
+					"text": "down"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 699402878911124,
+							"parameters": {
+								"unique-id": "108"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 499498562787201,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "7"
+							}
+						}
+					],
+					"sid": 996350917770866
+				},
+				{
+					"eventType": "comment",
+					"text": "left"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 185372235055776,
+							"parameters": {
+								"unique-id": "110"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 319495606968636,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "5"
+							}
+						}
+					],
+					"sid": 708998621626571
+				},
+				{
+					"eventType": "comment",
+					"text": "right"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 208540030236456,
+							"parameters": {
+								"unique-id": "109"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 592469343267021,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "6"
+							}
+						}
+					],
+					"sid": 494310105735804
+				},
+				{
+					"eventType": "comment",
+					"text": "attack"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 808702908464129,
+							"parameters": {
+								"unique-id": "112"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 534054756215433,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 449991826874387
+				},
+				{
+					"eventType": "comment",
+					"text": "Special"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 519704054771024,
+							"parameters": {
+								"unique-id": "113"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 965789859568132,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 779203883253822
+				},
+				{
+					"eventType": "comment",
+					"text": "Pause"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 582872736715141,
+							"parameters": {
+								"unique-id": "117"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 914648112863449,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "9"
+							}
+						}
+					],
+					"sid": 574961622264314
+				},
+				{
+					"eventType": "comment",
+					"text": "Grab"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 444738793543595,
+							"parameters": {
+								"unique-id": "111"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 572146841179040,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "37"
+							}
+						}
+					],
+					"sid": 492960770118971
+				},
+				{
+					"eventType": "comment",
+					"text": "Shield"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 167869622319193,
+							"parameters": {
+								"unique-id": "114"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 894320174462582,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "4"
+							}
+						}
+					],
+					"sid": 272346586018884
+				},
+				{
+					"eventType": "comment",
+					"text": "Taunt"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 244012406566869,
+							"parameters": {
+								"unique-id": "115"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 210555334134387,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "38"
+							}
+						}
+					],
+					"sid": 214412752156250
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 753593055935742,
+					"parameters": {
+						"variable": "Menu",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 534500470900180,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 627121925297157,
+							"parameters": {
+								"variable": "C2",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 703723059222241,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 224491600897529,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 487618260908525,
+									"parameters": {
+										"animation": "\"Animation 4\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 788590662413485
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 394592388790503,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 5,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 591852704918488,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 127822467007860
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 736016547297859,
+							"parameters": {
+								"variable": "C2",
+								"comparison": 0,
+								"value": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 478073056035742,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 511868485331159,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 468041958881902,
+									"parameters": {
+										"animation": "\"Animation 3\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 449665303585544
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 899301371565722,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "C2"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 599619150502887,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 840301402945569,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 219252337681064,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 512684399101349
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 969862363146155,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "C2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 741250781429977,
+									"parameters": {
+										"animation": "\"Animation 5\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Sprite14",
+									"sid": 677535460540814,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 573428519498759
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Jump"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 917055089918782,
+							"parameters": {
+								"unique-id": "150"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 821744264099935,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "43"
+							}
+						}
+					],
+					"sid": 373477860523565
+				},
+				{
+					"eventType": "comment",
+					"text": "Up"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 871275990120793,
+							"parameters": {
+								"unique-id": "103"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 889072812311292,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "16"
+							}
+						}
+					],
+					"sid": 944323083377784
+				},
+				{
+					"eventType": "comment",
+					"text": "down"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 281155962732109,
+							"parameters": {
+								"unique-id": "108"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 418835469018096,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "15"
+							}
+						}
+					],
+					"sid": 864274821877287
+				},
+				{
+					"eventType": "comment",
+					"text": "left"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 362607037937646,
+							"parameters": {
+								"unique-id": "110"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 470910085416466,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "13"
+							}
+						}
+					],
+					"sid": 954449915995936
+				},
+				{
+					"eventType": "comment",
+					"text": "right"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 416180307521040,
+							"parameters": {
+								"unique-id": "109"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 332773436958365,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "14"
+							}
+						}
+					],
+					"sid": 888636477676266
+				},
+				{
+					"eventType": "comment",
+					"text": "attack"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 907030453878401,
+							"parameters": {
+								"unique-id": "112"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 856207093964378,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "10"
+							}
+						}
+					],
+					"sid": 621815380396148
+				},
+				{
+					"eventType": "comment",
+					"text": "Special"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 693569652728761,
+							"parameters": {
+								"unique-id": "113"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 654394676094763,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "11"
+							}
+						}
+					],
+					"sid": 829652265265776
+				},
+				{
+					"eventType": "comment",
+					"text": "Pause"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 699644953614941,
+							"parameters": {
+								"unique-id": "117"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 827005861489160,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "17"
+							}
+						}
+					],
+					"sid": 978155521196332
+				},
+				{
+					"eventType": "comment",
+					"text": "Grab"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 752634042912828,
+							"parameters": {
+								"unique-id": "111"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 683507478196387,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "36"
+							}
+						}
+					],
+					"sid": 646371620657593
+				},
+				{
+					"eventType": "comment",
+					"text": "Shield"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 644685594028943,
+							"parameters": {
+								"unique-id": "114"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 967830392469935,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "12"
+							}
+						}
+					],
+					"sid": 116071640690982
+				},
+				{
+					"eventType": "comment",
+					"text": "Taunt"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 153853172243270,
+							"parameters": {
+								"unique-id": "115"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 683878899080708,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "39"
+							}
+						}
+					],
+					"sid": 564306686744880
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 115671371270391,
+					"parameters": {
+						"variable": "Menu",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 811329031695396,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 223662685927034,
+							"parameters": {
+								"variable": "C3",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 952796668087784,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 633796392515730,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 494713663419167,
+									"parameters": {
+										"animation": "\"Animation 4\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 494047634021788
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 192555046750722,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 5,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 709269481489207,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 702384629281922
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 518004425345758,
+							"parameters": {
+								"variable": "C3",
+								"comparison": 0,
+								"value": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 231609243932545,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 866559441113424,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 480910540550157,
+									"parameters": {
+										"animation": "\"Animation 3\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 707428111849063
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 600649780725510,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "C3"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 890170134870275,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 586746631610830,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 970340250975503,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 247886342079773
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 288067230444276,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "C3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 649990575358222,
+									"parameters": {
+										"animation": "\"Animation 5\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Sprite14",
+									"sid": 294982076865810,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 516742912693275
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Jump"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 862002114645470,
+							"parameters": {
+								"unique-id": "150"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 445642166212325,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "44"
+							}
+						}
+					],
+					"sid": 562227631643660
+				},
+				{
+					"eventType": "comment",
+					"text": "Up"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 573810396408471,
+							"parameters": {
+								"unique-id": "103"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 440483524769200,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "24"
+							}
+						}
+					],
+					"sid": 532080564223736
+				},
+				{
+					"eventType": "comment",
+					"text": "down"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 547470784440220,
+							"parameters": {
+								"unique-id": "108"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 810812106709305,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "23"
+							}
+						}
+					],
+					"sid": 491737945412667
+				},
+				{
+					"eventType": "comment",
+					"text": "left"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 219815829369661,
+							"parameters": {
+								"unique-id": "110"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 669890721067642,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "21"
+							}
+						}
+					],
+					"sid": 318724432340856
+				},
+				{
+					"eventType": "comment",
+					"text": "right"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 348221907126078,
+							"parameters": {
+								"unique-id": "109"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 205753956520606,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "22"
+							}
+						}
+					],
+					"sid": 952617736102113
+				},
+				{
+					"eventType": "comment",
+					"text": "attack"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 251234991147556,
+							"parameters": {
+								"unique-id": "112"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 522872361687273,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "18"
+							}
+						}
+					],
+					"sid": 229333626627850
+				},
+				{
+					"eventType": "comment",
+					"text": "Special"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 802825534051613,
+							"parameters": {
+								"unique-id": "113"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 724609496917953,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "19"
+							}
+						}
+					],
+					"sid": 850451604555748
+				},
+				{
+					"eventType": "comment",
+					"text": "Pause"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 740263284615103,
+							"parameters": {
+								"unique-id": "117"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 392777213029423,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "25"
+							}
+						}
+					],
+					"sid": 254605512567958
+				},
+				{
+					"eventType": "comment",
+					"text": "Grab"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 590405871240690,
+							"parameters": {
+								"unique-id": "111"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 912969420388705,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "20"
+							}
+						}
+					],
+					"sid": 447340712799382
+				},
+				{
+					"eventType": "comment",
+					"text": "Shield"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 257849442502073,
+							"parameters": {
+								"unique-id": "114"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 640672962793320,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "35"
+							}
+						}
+					],
+					"sid": 853081400359170
+				},
+				{
+					"eventType": "comment",
+					"text": "Taunt"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 471137988841793,
+							"parameters": {
+								"unique-id": "115"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 888256232089014,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "40"
+							}
+						}
+					],
+					"sid": 244824407496365
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 466928917922123,
+					"parameters": {
+						"variable": "Menu",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 754972931924161,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 519613653779183,
+							"parameters": {
+								"variable": "C4",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 708088075309094,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 481101419868110,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 890409717613682,
+									"parameters": {
+										"animation": "\"Animation 4\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 473598059098042
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 648675966754579,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 5,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 424153708307316,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 476674897424680
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 793641615868846,
+							"parameters": {
+								"variable": "C4",
+								"comparison": 0,
+								"value": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 149560310853370,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 641931064451174,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 529334306297295,
+									"parameters": {
+										"animation": "\"Animation 3\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 895329236527833
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 917349324878148,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "C4"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 837934795937113,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 460404807494570,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "-1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 499778416691111,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 416937133517140
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Sprite14",
+									"sid": 830094023780914,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "C4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite14",
+									"sid": 204050270011871,
+									"parameters": {
+										"animation": "\"Animation 5\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Sprite14",
+									"sid": 824403676536649,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 594934118314005
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Jump"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 866098234542747,
+							"parameters": {
+								"unique-id": "150"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 399360726434522,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "45"
+							}
+						}
+					],
+					"sid": 761168715877323
+				},
+				{
+					"eventType": "comment",
+					"text": "Up"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 460257938790270,
+							"parameters": {
+								"unique-id": "103"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 871586052831746,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "32"
+							}
+						}
+					],
+					"sid": 940500232095955
+				},
+				{
+					"eventType": "comment",
+					"text": "down"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 674884174900825,
+							"parameters": {
+								"unique-id": "108"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 156968045234651,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "31"
+							}
+						}
+					],
+					"sid": 522006873707822
+				},
+				{
+					"eventType": "comment",
+					"text": "left"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 261598776746388,
+							"parameters": {
+								"unique-id": "110"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 820886299578093,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "29"
+							}
+						}
+					],
+					"sid": 520519732761635
+				},
+				{
+					"eventType": "comment",
+					"text": "right"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 236737234449390,
+							"parameters": {
+								"unique-id": "109"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 174632912991372,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "30"
+							}
+						}
+					],
+					"sid": 132511029067268
+				},
+				{
+					"eventType": "comment",
+					"text": "attack"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 353437932313442,
+							"parameters": {
+								"unique-id": "112"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 152305772526557,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "26"
+							}
+						}
+					],
+					"sid": 436960707423093
+				},
+				{
+					"eventType": "comment",
+					"text": "Special"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 783814199205372,
+							"parameters": {
+								"unique-id": "113"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 853670563783053,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "27"
+							}
+						}
+					],
+					"sid": 650375914987583
+				},
+				{
+					"eventType": "comment",
+					"text": "Pause"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 383200618421021,
+							"parameters": {
+								"unique-id": "117"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 667745742679144,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "33"
+							}
+						}
+					],
+					"sid": 706111633548333
+				},
+				{
+					"eventType": "comment",
+					"text": "Grab"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 888659044531082,
+							"parameters": {
+								"unique-id": "111"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 281885797557237,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "34"
+							}
+						}
+					],
+					"sid": 489808291728155
+				},
+				{
+					"eventType": "comment",
+					"text": "Shield"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 654427330964554,
+							"parameters": {
+								"unique-id": "114"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 604634093971629,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "28"
+							}
+						}
+					],
+					"sid": 316454236833161
+				},
+				{
+					"eventType": "comment",
+					"text": "Taunt"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 237594889768541,
+							"parameters": {
+								"unique-id": "115"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont",
+							"sid": 746682364889443,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "41"
+							}
+						}
+					],
+					"sid": 834096905435409
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 576388913892835,
+					"parameters": {
+						"object": "SpriteFont"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 780738029553513,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 865852249813726,
+							"parameters": {
+								"unique-id": "145"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 515753610042908,
+							"parameters": {
+								"unique-id": "146"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 827403187091787,
+							"parameters": {
+								"unique-id": "147"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-default-color",
+							"objectClass": "SpriteFont",
+							"sid": 956498654732511,
+							"parameters": {
+								"color": "rgbEx(255, 187, 0)"
+							}
+						}
+					],
+					"sid": 432202356563692,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Hand",
+					"sid": 744949055090455,
+					"parameters": {
+						"object": "Sprite11"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "Sprite11",
+					"sid": 293617688335235,
+					"parameters": {
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 237502475742525
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-frame-changed",
+					"objectClass": "Sprite11",
+					"sid": 971045568146156
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Sprite11",
+					"sid": 488809041163177,
+					"parameters": {
+						"object": "Hand"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Sprite11",
+					"sid": 194897200711478,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 483139488078657
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 811409986494825,
+					"parameters": {
+						"object": "SpriteFont"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 104837577945939,
+					"parameters": {
+						"object": "SpriteFont"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 888284848201659,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 484696292749858,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-default-color",
+							"objectClass": "SpriteFont",
+							"sid": 895931758425462,
+							"parameters": {
+								"color": "rgbEx(0, 0, 0)"
+							}
+						}
+					],
+					"sid": 681420311947157
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 586508999731919,
+					"parameters": {
+						"key": "\"LDM\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 706528380888266,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 386254821312156,
+							"parameters": {
+								"comparison": 0,
+								"value": "\"1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 765985910023135,
+							"parameters": {
+								"variable": "LDM",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 608520489057438,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 536300593834575,
+									"parameters": {
+										"unique-id": "658"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "OnOff",
+									"sid": 689937650192802,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 418526360235388
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 504964769204796,
+							"parameters": {
+								"comparison": 0,
+								"value": "\"0\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 517754087027128,
+							"parameters": {
+								"variable": "LDM",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 960665268702712,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 610084193958604,
+									"parameters": {
+										"unique-id": "658"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "OnOff",
+									"sid": 331021673605976,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 427058336078861
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 229415483857335,
+					"parameters": {
+						"key": "\"FS\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 162320518183194,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 436279753458344,
+							"parameters": {
+								"comparison": 0,
+								"value": "\"1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-fullscreen-scaling",
+							"objectClass": "System",
+							"sid": 970641927802754,
+							"parameters": {
+								"fullscreen-scaling": "high-quality"
+							}
+						}
+					],
+					"sid": 885201465247563,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 583887948651281,
+									"parameters": {
+										"unique-id": "659"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "OnOff",
+									"sid": 823669582827225,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 601270376204921
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 651882527265618,
+							"parameters": {
+								"comparison": 0,
+								"value": "\"0\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-fullscreen-scaling",
+							"objectClass": "System",
+							"sid": 367851210627265,
+							"parameters": {
+								"fullscreen-scaling": "low-quality"
+							}
+						}
+					],
+					"sid": 237770496999263,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 635162541590213,
+									"parameters": {
+										"unique-id": "659"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "OnOff",
+									"sid": 497437681408731,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 403111716542804
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 797233558446817,
+					"parameters": {
+						"key": "\"FS\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 478593365457137,
+					"parameters": {
+						"key": "\"FS\"",
+						"value": "\"1\""
+					}
+				}
+			],
+			"sid": 167551650626091
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 840299768156966,
+					"parameters": {
+						"key": "\"LDM\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 272788151073926,
+					"parameters": {
+						"key": "\"LDM\"",
+						"value": "\"0\""
+					}
+				}
+			],
+			"sid": 143408364726734
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 126952488095716,
+					"parameters": {
+						"key": "\"IH\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 811384213991942,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 411220642501713,
+							"parameters": {
+								"comparison": 0,
+								"value": "\"1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 853704476702530,
+							"parameters": {
+								"variable": "IH",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 883102396411124,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 323781682761856,
+									"parameters": {
+										"unique-id": "736"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "OnOff",
+									"sid": 134714077056292,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 410989355543365
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 718572463426729,
+							"parameters": {
+								"comparison": 0,
+								"value": "\"0\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 410139095458712,
+							"parameters": {
+								"variable": "IH",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 200945327711735,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 695940145786805,
+									"parameters": {
+										"unique-id": "736"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "OnOff",
+									"sid": 232790757464029,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 661992517165226
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 335164886104844,
+					"parameters": {
+						"key": "\"IH\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 211644411052573,
+					"parameters": {
+						"key": "\"IH\"",
+						"value": "\"0\""
+					}
+				}
+			],
+			"sid": 715362801324475
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "movil3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-in-touch",
+							"objectClass": "Touch",
+							"sid": 189599530542203
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Hand",
+							"sid": 534317569307411,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "movecursor",
+							"sid": 660978962607896,
+							"parameters": {
+								"x": "Touch.X",
+								"y": "Touch.Y"
+							}
+						}
+					],
+					"sid": 168117012015603
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 225110822276304
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 921373163068511,
+							"parameters": {
+								"object": "SpriteFont",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 259463047989629,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 785178250570920,
+									"parameters": {
+										"unique-id": "145"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "movecursor",
+									"sid": 966238366546628
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "trans",
+									"sid": 619074914226713,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-192",
+										"time": "0.3",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 530960911002071,
+									"parameters": {
+										"seconds": "0.6"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 468127570602307,
+									"parameters": {
+										"layout": "Main menu"
+									}
+								}
+							],
+							"sid": 764696201526381
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 557023421790596,
+									"parameters": {
+										"unique-id": "689"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "movecursor",
+									"sid": 349614126235523
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "trans",
+									"sid": 956155317138120,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-192",
+										"time": "0.3",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 387511415288144,
+									"parameters": {
+										"seconds": "0.6"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 811782190568434,
+									"parameters": {
+										"layout": "Main menu"
+									}
+								}
+							],
+							"sid": 634605419448440
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 366800164704711,
+									"parameters": {
+										"unique-id": "1113"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "movecursor",
+									"sid": 484785567239055
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "trans",
+									"sid": 327649219441106,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-192",
+										"time": "0.3",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 189648746378248,
+									"parameters": {
+										"seconds": "0.6"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 211764899787931,
+									"parameters": {
+										"layout": "Main menu"
+									}
+								}
+							],
+							"sid": 196972761225877
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 988651869704294,
+									"parameters": {
+										"unique-id": "1123"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 769579320856537,
+									"parameters": {
+										"key": "\"Key_Mapper\"",
+										"value": "KEYS2.AsJSON"
+									}
+								}
+							],
+							"sid": 396584568996164,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "tween-one-property",
+											"objectClass": "Saved",
+											"sid": 978662976929415,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"1\"",
+												"property": "offsetY",
+												"end-value": "248",
+												"time": "0.25",
+												"ease": "default",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										}
+									],
+									"sid": 294618739592528
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 245363664370911,
+									"parameters": {
+										"unique-id": "1124"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 418070645738429,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"value": "440"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 221633131054367,
+									"parameters": {
+										"x": "1",
+										"y": "1",
+										"value": "232"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 203239035665030,
+									"parameters": {
+										"x": "2",
+										"y": "0",
+										"value": "388"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 378410975309387,
+									"parameters": {
+										"x": "2",
+										"y": "1",
+										"value": "232"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 270235939836458,
+									"parameters": {
+										"x": "3",
+										"y": "0",
+										"value": "336"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 565991696196254,
+									"parameters": {
+										"x": "3",
+										"y": "1",
+										"value": "232"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 312598279090644,
+									"parameters": {
+										"x": "4",
+										"y": "0",
+										"value": "336"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 903358755228803,
+									"parameters": {
+										"x": "4",
+										"y": "1",
+										"value": "176"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 323492029386138,
+									"parameters": {
+										"x": "5",
+										"y": "0",
+										"value": "388"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 411928655267546,
+									"parameters": {
+										"x": "5",
+										"y": "1",
+										"value": "176"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 628915398213512,
+									"parameters": {
+										"x": "6",
+										"y": "0",
+										"value": "440"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 656001509604311,
+									"parameters": {
+										"x": "6",
+										"y": "1",
+										"value": "176"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 579979039489144,
+									"parameters": {
+										"x": "7",
+										"y": "0",
+										"value": "100"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 417388574917670,
+									"parameters": {
+										"x": "7",
+										"y": "1",
+										"value": "236"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 968101826480787,
+									"parameters": {
+										"x": "8",
+										"y": "0",
+										"value": "64"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 915442402366788,
+									"parameters": {
+										"x": "8",
+										"y": "1",
+										"value": "200"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 501885082152066,
+									"parameters": {
+										"x": "9",
+										"y": "0",
+										"value": "100"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 343810189961075,
+									"parameters": {
+										"x": "9",
+										"y": "1",
+										"value": "164"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 792333081433124,
+									"parameters": {
+										"x": "10",
+										"y": "0",
+										"value": "136"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 189425848745369,
+									"parameters": {
+										"x": "10",
+										"y": "1",
+										"value": "200"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 919906105385445,
+									"parameters": {
+										"x": "11",
+										"y": "0",
+										"value": "232"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "KEYS2",
+									"sid": 947153542271720,
+									"parameters": {
+										"x": "11",
+										"y": "1",
+										"value": "16"
+									}
+								},
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 301514927861603
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Button2",
+									"sid": 385137155008758,
+									"parameters": {
+										"x": "KEYS2.At(Self.ID,0)",
+										"y": "KEYS2.At(Self.ID,1)"
+									}
+								}
+							],
+							"sid": 955561800072222
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 910921108995598,
+							"parameters": {
+								"object": "OnOff",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 322103574024986,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 357786789931481,
+									"parameters": {
+										"unique-id": "659"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 764785913207091,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "OnOff",
+											"sid": 109295610718316,
+											"parameters": {
+												"animation": "\"Animation 1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 930668266687637,
+											"parameters": {
+												"key": "\"FS\"",
+												"value": "\"1\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 749434457440392,
+											"parameters": {
+												"seconds": "0.25"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "OnOff",
+											"sid": 344248076159174,
+											"parameters": {
+												"animation": "\"Animation 2\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-fullscreen-scaling",
+											"objectClass": "System",
+											"sid": 758771012226913,
+											"parameters": {
+												"fullscreen-scaling": "high-quality"
+											}
+										}
+									],
+									"sid": 364158638526196
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "OnOff",
+											"sid": 626393954075310,
+											"parameters": {
+												"animation": "\"Animation 2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 951690707220715,
+											"parameters": {
+												"key": "\"FS\"",
+												"value": "\"0\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 263130283628182,
+											"parameters": {
+												"seconds": "0.25"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "OnOff",
+											"sid": 408769764442623,
+											"parameters": {
+												"animation": "\"Animation 1\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-fullscreen-scaling",
+											"objectClass": "System",
+											"sid": 185731878627340,
+											"parameters": {
+												"fullscreen-scaling": "low-quality"
+											}
+										}
+									],
+									"sid": 960748896789273
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 467734042537690,
+									"parameters": {
+										"unique-id": "658"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 222194737714668,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "OnOff",
+											"sid": 946934233037939,
+											"parameters": {
+												"animation": "\"Animation 1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 811471836124718,
+											"parameters": {
+												"seconds": "0.25"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "OnOff",
+											"sid": 531400320277371,
+											"parameters": {
+												"animation": "\"Animation 2\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 271932446965223,
+											"parameters": {
+												"key": "\"LDM\"",
+												"value": "\"1\""
+											}
+										}
+									],
+									"sid": 149182442579058
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "OnOff",
+											"sid": 230950471276083,
+											"parameters": {
+												"animation": "\"Animation 2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 824837254251260,
+											"parameters": {
+												"seconds": "0.25"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "OnOff",
+											"sid": 529738079570808,
+											"parameters": {
+												"animation": "\"Animation 1\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 686754556611542,
+											"parameters": {
+												"key": "\"LDM\"",
+												"value": "\"0\""
+											}
+										}
+									],
+									"sid": 948772825705754
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 551906420682513,
+									"parameters": {
+										"unique-id": "736"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 211227168056586,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "OnOff",
+											"sid": 695872891490431,
+											"parameters": {
+												"animation": "\"Animation 1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 143358867005783,
+											"parameters": {
+												"seconds": "0.25"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "OnOff",
+											"sid": 316026291756423,
+											"parameters": {
+												"animation": "\"Animation 2\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 980717206460984,
+											"parameters": {
+												"key": "\"IH\"",
+												"value": "\"1\""
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 879527587104543,
+											"parameters": {
+												"variable": "IH",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 843395834370787
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "OnOff",
+											"sid": 419069993584135,
+											"parameters": {
+												"animation": "\"Animation 2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 163537991746844,
+											"parameters": {
+												"seconds": "0.25"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "OnOff",
+											"sid": 232309841403621,
+											"parameters": {
+												"animation": "\"Animation 1\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 460924020299585,
+											"parameters": {
+												"key": "\"IH\"",
+												"value": "\"0\""
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 575480923762528,
+											"parameters": {
+												"variable": "IH",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 759276124310654
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 285794968932944
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Button2",
+					"sid": 901593643090184,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-at-xy",
+					"objectClass": "KEYS2",
+					"sid": 810105519092464,
+					"parameters": {
+						"x": "Button2.ID",
+						"y": "0",
+						"value": "Button2.X"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "KEYS2",
+					"sid": 255585740253575,
+					"parameters": {
+						"x": "Button2.ID",
+						"y": "1",
+						"value": "Button2.Y"
+					}
+				}
+			],
+			"sid": 687192473921918
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 343884607623932,
+					"parameters": {
+						"key": "\"Key_Mapper\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "KEYS2",
+					"sid": 280395628359000,
+					"parameters": {
+						"json": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Button2",
+					"sid": 759635612724422,
+					"parameters": {
+						"x": "KEYS2.At(Self.ID,0)",
+						"y": "KEYS2.At(Self.ID,1)"
+					}
+				}
+			],
+			"sid": 576299984715343
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 938146407442093,
+					"parameters": {
+						"key": "\"Key_Mapper\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 359526434504245,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 712763251385914,
+							"parameters": {
+								"object": "Button2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "KEYS2",
+							"sid": 220551565411333,
+							"parameters": {
+								"x": "Button2.ID",
+								"y": "0",
+								"value": "Button2.X"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "KEYS2",
+							"sid": 263864268199107,
+							"parameters": {
+								"x": "Button2.ID",
+								"y": "1",
+								"value": "Button2.Y"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 776416668102319
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 424819264435521,
+							"parameters": {
+								"key": "\"Key_Mapper\"",
+								"value": "KEYS2.AsJSON"
+							}
+						}
+					],
+					"sid": 458415515307639
+				}
+			]
+		}
+	],
+	"sid": 661541473330174
+}

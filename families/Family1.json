@@ -1,0 +1,13 @@
+{
+	"name": "Family1",
+	"plugin-id": "Sprite",
+	"sid": 207734491431654,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"light",
+		"St_Li2",
+		"Sprite40"
+	]
+}

@@ -1,0 +1,60 @@
+{
+	"name": "Counter",
+	"plugin-id": "Sprite",
+	"sid": 283174079846244,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Dir",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 120361584175527
+		},
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 277266224730673
+		},
+		{
+			"name": "Mode",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 601434901264490
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7404968,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 996318253563622,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

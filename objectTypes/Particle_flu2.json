@@ -1,0 +1,35 @@
+{
+	"name": "Particle_flu2",
+	"plugin-id": "Particles",
+	"sid": 592677807244236,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 233916654357697
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 448097565447621
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 5,
+		"height": 5,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5906794,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"name": "roes",
+	"plugin-id": "Sprite",
+	"sid": 627378393330552,
+	"instanceVariables": [
+		{
+			"name": "Distances",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 964946658158443
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics2",
+			"sid": 376829136333097
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"rope"
+	]
+}

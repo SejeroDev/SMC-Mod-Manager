@@ -1,0 +1,97 @@
+{
+	"name": "Mushrooms",
+	"plugin-id": "Sprite",
+	"sid": 697444436986324,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 992791214246204
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 208803483033382
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 142,
+						"height": 121,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7190851,
+						"collisionPoly": {
+							"points": [
+								0.1566901677091358,
+								0.045454561217757296,
+								0.8345070153894558,
+								0.03925619046550152,
+								0.8433099666111904,
+								0.053719024027674527,
+								0.13556332655355963,
+								0.0661156079000678
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 554085170315397,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 92,
+						"height": 74,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6318740,
+						"collisionPoly": {
+							"points": [
+								0.17663043478260862,
+								0.06418917630169843,
+								0.8152173083761461,
+								0.06756756756756757,
+								0.8288042648978854,
+								0.0996621750496532,
+								0.14402161473813266,
+								0.0945945881508495
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 316084873108623,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

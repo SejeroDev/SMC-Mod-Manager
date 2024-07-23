@@ -1,0 +1,329 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 576495831472238
+				}
+			],
+			"actions": [
+				{
+					"id": "set-z-elevation",
+					"objectClass": "Sprite25",
+					"sid": 100775616122292,
+					"parameters": {
+						"z": "Self.xd*random(10,20)"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Sprite25",
+					"sid": 907674024235473
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite25",
+					"sid": 243365487667424,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetZElevation",
+						"end-value": "Self.xd",
+						"time": "2",
+						"ease": "easeoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite26",
+					"sid": 411070373287652,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite26",
+					"sid": 529590020701326,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetWidth",
+						"end-value": "224",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite26",
+					"sid": 521285818783248,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"first\"",
+						"property": "offsetHeight",
+						"end-value": "160",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 507715729588154
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Sprite26",
+					"sid": 997242602377789,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"first\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite22",
+					"sid": 204577798511719,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"first\"",
+						"property": "offsetZElevation",
+						"end-value": "0",
+						"time": "0.5",
+						"ease": "easeoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 698496692171985,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "shake",
+					"objectClass": "Sprite6",
+					"sid": 828969202344552,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "20",
+						"duration": "0.3",
+						"mode": "reducing-magnitude"
+					}
+				}
+			],
+			"sid": 774492845600023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 995163401040535
+				}
+			],
+			"actions": [
+				{
+					"id": "set-image-offset-x",
+					"objectClass": "TiledBackground8",
+					"sid": 323451483708285,
+					"parameters": {
+						"offset-x": "Self.ImageOffsetX+0.25"
+					}
+				},
+				{
+					"id": "set-image-offset-y",
+					"objectClass": "TiledBackground8",
+					"sid": 603814291706590,
+					"parameters": {
+						"offset-y": "Self.ImageOffsetY+0.25"
+					}
+				}
+			],
+			"sid": 802810497901650
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-any-playing",
+					"objectClass": "Sprite22",
+					"sid": 728656085724447,
+					"behaviorType": "Tween",
+					"isInverted": true
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "Sprite26",
+					"sid": 188661446453955,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 637239161572402,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 608798951153464
+						},
+						{
+							"id": "on-any-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 785431783466641,
+							"parameters": {
+								"gamepad": "0"
+							}
+						},
+						{
+							"id": "on-any-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 128566057316678,
+							"parameters": {
+								"gamepad": "1"
+							}
+						},
+						{
+							"id": "on-any-touch-end",
+							"objectClass": "Touch",
+							"sid": 951852691657542
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 944649702757594,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 994968684556275,
+							"parameters": {
+								"layout": "Main menu"
+							}
+						}
+					],
+					"sid": 242922464177840,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 903374067566177,
+					"parameters": {
+						"key": 9
+					}
+				},
+				{
+					"id": "is-fullscreen",
+					"objectClass": "Browser",
+					"sid": 856063369542104,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 361495446920939,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Browser",
+					"sid": 746893586346542,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "auto"
+					}
+				}
+			],
+			"sid": 805526283572125
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 144385008622669,
+					"parameters": {
+						"key": 9
+					}
+				},
+				{
+					"id": "is-fullscreen",
+					"objectClass": "Browser",
+					"sid": 249341556149686
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 916154348187564,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "cancel-fullscreen",
+					"objectClass": "Browser",
+					"sid": 552468979349732
+				}
+			],
+			"sid": 317980839323235
+		}
+	],
+	"sid": 721805312563012
+}

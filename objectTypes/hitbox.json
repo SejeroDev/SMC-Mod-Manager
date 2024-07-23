@@ -1,0 +1,94 @@
+{
+	"name": "hitbox",
+	"plugin-id": "Sprite",
+	"sid": 573630224286918,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "dmg",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 326096095459942
+		},
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 694616379955719
+		},
+		{
+			"name": "dir",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 143579494672692
+		},
+		{
+			"name": "Potencia",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 850172599518038
+		},
+		{
+			"name": "anglepunch",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 484048590157274
+		},
+		{
+			"name": "destroy",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 443443785486747
+		},
+		{
+			"name": "Ox",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 908961174952400
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 859762348377379
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8681910,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 164772027798712,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"name": "Percentaje",
+	"plugin-id": "Spritefont2",
+	"sid": 391228031313094,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Player",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 357985866157531
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 60,
+		"height": 80,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1446126,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

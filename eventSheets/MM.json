@@ -1,0 +1,3906 @@
+{
+	"name": "MM",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Controls"
+		},
+		{
+			"eventType": "variable",
+			"name": "Menu",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 467962931192869
+		},
+		{
+			"eventType": "variable",
+			"name": "SFX",
+			"type": "number",
+			"initialValue": "-5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 954330146421483
+		},
+		{
+			"eventType": "variable",
+			"name": "BGM",
+			"type": "number",
+			"initialValue": "-5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 726131490722185
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 358671908564187
+				}
+			],
+			"actions": [
+				{
+					"id": "set-image-offset-y",
+					"objectClass": "TiledBackground",
+					"sid": 420612532940309,
+					"parameters": {
+						"offset-y": "Self.ImageOffsetY+0.5"
+					}
+				},
+				{
+					"id": "set-image-offset-x",
+					"objectClass": "TiledBackground2",
+					"sid": 163882242010689,
+					"parameters": {
+						"offset-x": "Self.ImageOffsetX+0.25"
+					}
+				},
+				{
+					"id": "set-image-offset-y",
+					"objectClass": "TiledBackground2",
+					"sid": 315565816308513,
+					"parameters": {
+						"offset-y": "Self.ImageOffsetY+0.25"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "titlecard",
+					"sid": 564974709159589,
+					"parameters": {
+						"animation": "\"Animation \"&Menu",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 682759660471716
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 466943656499110,
+					"parameters": {
+						"interval-seconds": "1.16"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "TiledBackground2",
+					"sid": 890865207641657,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"1\"",
+						"property": "offsetZElevation",
+						"end-value": "-5",
+						"time": "0.2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 516757238475952
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 789607064742137
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "trans",
+					"sid": 151119940485178,
+					"parameters": {
+						"x": "Self.X",
+						"y": "-192"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "trans",
+					"sid": 141523214689008,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "-488",
+						"time": "0.3",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 197564761571868,
+					"parameters": {
+						"variable": "GamepadCount",
+						"value": "Gamepad.GamepadCount"
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 925471668659205,
+					"parameters": {
+						"key": "\"FS\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 710039935923260,
+					"parameters": {
+						"key": "\"LDM\""
+					}
+				}
+			],
+			"sid": 518753738381428,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 111686274215315,
+							"parameters": {
+								"object": "Men_Button"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Men_Button",
+							"sid": 491001118274592,
+							"parameters": {
+								"object": "SpriteFont"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "SpriteFont",
+							"sid": 998351315585424,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Men_Button",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 322231317476419
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 305500248994585,
+							"parameters": {
+								"variable": "GamepadCount",
+								"comparison": 2,
+								"value": "C1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 557817593197460,
+							"parameters": {
+								"variable": "C1",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 655023532885153
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 883227956401523,
+							"parameters": {
+								"variable": "GamepadCount",
+								"comparison": 2,
+								"value": "c2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 473858842109168,
+							"parameters": {
+								"variable": "C2",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 320346008563813
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 124665940608875,
+							"parameters": {
+								"variable": "GamepadCount",
+								"comparison": 2,
+								"value": "c3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 992894958091389,
+							"parameters": {
+								"variable": "C3",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 103525562905027
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 783623878653845,
+							"parameters": {
+								"variable": "GamepadCount",
+								"comparison": 2,
+								"value": "c4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 928229550570334,
+							"parameters": {
+								"variable": "C4",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 867521705741150
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 262013268840218,
+							"parameters": {
+								"tag": "\"SG\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 575926216441083,
+							"parameters": {
+								"audio-file": "Menu_Crusher_Pero_Con_Don_Pollo",
+								"loop": "looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"SG\""
+							}
+						}
+					],
+					"sid": 794511006506974
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-android",
+							"objectClass": "PlatformInfo",
+							"sid": 739930040174635,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 825199021468540,
+							"parameters": {
+								"group-name": "\"Movil\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 267883086536591
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-android",
+							"objectClass": "PlatformInfo",
+							"sid": 840331897150346
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 922255612397408,
+							"parameters": {
+								"group-name": "\"Movil\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 589678771833815
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 997816978036793,
+					"parameters": {
+						"key": "\"LDM\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 554078228899371,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 403694698174174,
+							"parameters": {
+								"comparison": 0,
+								"value": "\"1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 214650799804843,
+							"parameters": {
+								"variable": "LDM",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 154778224164899,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 417695078250240,
+									"parameters": {
+										"unique-id": "659"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "OnOff",
+									"sid": 497249945216852,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 636733906099202
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 883210586903544,
+							"parameters": {
+								"comparison": 0,
+								"value": "\"0\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 279445212013886,
+							"parameters": {
+								"variable": "LDM",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 687250224004680,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 984159743804337,
+									"parameters": {
+										"unique-id": "659"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "OnOff",
+									"sid": 586810142133967,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 898692138035810
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 997446491666692,
+					"parameters": {
+						"key": "\"FS\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 414110200384805,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 803687601729369,
+							"parameters": {
+								"comparison": 0,
+								"value": "\"1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-fullscreen-scaling",
+							"objectClass": "System",
+							"sid": 329461507203607,
+							"parameters": {
+								"fullscreen-scaling": "high-quality"
+							}
+						}
+					],
+					"sid": 239634538131907,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 819910729155463,
+									"parameters": {
+										"unique-id": "659"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "OnOff",
+									"sid": 606917727285424,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 215396639767813
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 529102092806192,
+							"parameters": {
+								"comparison": 0,
+								"value": "\"0\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-fullscreen-scaling",
+							"objectClass": "System",
+							"sid": 221128841883468,
+							"parameters": {
+								"fullscreen-scaling": "low-quality"
+							}
+						}
+					],
+					"sid": 228307884063389,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "OnOff",
+									"sid": 266980919337673,
+									"parameters": {
+										"unique-id": "659"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "OnOff",
+									"sid": 407496155729087,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 422804894343330
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "efecto de movimiento de los botones cuando su variable \"menu\" es igual al a variable global \"Menu\" se moveran"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Men_Button",
+					"sid": 605373679315825,
+					"parameters": {
+						"instance-variable": "menu",
+						"comparison": 0,
+						"value": "Menu"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Men_Button",
+					"sid": 343113623274804,
+					"parameters": {
+						"instance-variable": "menu",
+						"comparison": 2,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 635768711890534,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "efecto de expansion"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 225377474947063,
+							"parameters": {
+								"interval-seconds": "0.5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Men_Button",
+							"sid": 160307939794986,
+							"parameters": {
+								"object": "Sprite5",
+								"layer": "\"Layer 1\"",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Sprite5",
+							"sid": 476758735227801,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Men_Button",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 141519484535169
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "Men_Button",
+							"sid": 976331135251497,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"m1\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 401735761430396,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 340555831102950,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 985454194252721,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m1\"",
+										"property": "offsetX",
+										"end-value": "54",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 586410653481404
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 341029856683821,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 162091212508015,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m1\"",
+										"property": "offsetX",
+										"end-value": "70",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 770512712427488
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 844531187726879,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 181874166850038,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m1\"",
+										"property": "offsetX",
+										"end-value": "86",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 890040495754478
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 907700829985646,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 623230512888804,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m1\"",
+										"property": "offsetX",
+										"end-value": "102",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 171090117867424
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "si no es igual regresara a su posicion original"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Men_Button",
+					"sid": 714124153046702,
+					"parameters": {
+						"instance-variable": "menu",
+						"comparison": 0,
+						"value": "Menu"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Men_Button",
+					"sid": 447831477043160,
+					"parameters": {
+						"instance-variable": "menu",
+						"comparison": 2,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 438960199506874,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "Men_Button",
+							"sid": 205481992858928,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"m2\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 483985751595559,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 687371459363767,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 565975281966338,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m2\"",
+										"property": "offsetX",
+										"end-value": "-16",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 437900374327061
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 547203405182893,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 196966594136029,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m2\"",
+										"property": "offsetX",
+										"end-value": "0",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 653308224334380
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 497181546518298,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 167052221573901,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m2\"",
+										"property": "offsetX",
+										"end-value": "16",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 274945339902898
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 125819178023950,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 409606005629053,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m2\"",
+										"property": "offsetX",
+										"end-value": "32",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 281489604740009
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Men_Button",
+					"sid": 917758170554792,
+					"parameters": {
+						"instance-variable": "menu",
+						"comparison": 0,
+						"value": "Menu"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Men_Button",
+					"sid": 220568466392806,
+					"parameters": {
+						"instance-variable": "menu",
+						"comparison": 4,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 670151986657474,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 219931284250853,
+							"parameters": {
+								"interval-seconds": "0.5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Men_Button",
+							"sid": 142636552614817,
+							"parameters": {
+								"object": "Sprite5",
+								"layer": "\"Layer 1\"",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Sprite5",
+							"sid": 712271966868173,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Men_Button",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "Sprite5",
+							"sid": 693232956320397,
+							"parameters": {
+								"angle": "180"
+							}
+						}
+					],
+					"sid": 347187686544374
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "Men_Button",
+							"sid": 766273573964954,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"m1\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 887485797540247,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 196221796754888,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 103176539413579,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m1\"",
+										"property": "offsetX",
+										"end-value": "626",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 160523408436203
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 168010312013237,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 342377878557651,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m1\"",
+										"property": "offsetX",
+										"end-value": "610",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 927198200423826
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 560585504434906,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 114315746474442,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m1\"",
+										"property": "offsetX",
+										"end-value": "594",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 417353898964678
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 102067920048771,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 525281387643899,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m1\"",
+										"property": "offsetX",
+										"end-value": "578",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 306481868525715
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Men_Button",
+					"sid": 445660678500023,
+					"parameters": {
+						"instance-variable": "menu",
+						"comparison": 0,
+						"value": "Menu"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Men_Button",
+					"sid": 383177238421027,
+					"parameters": {
+						"instance-variable": "menu",
+						"comparison": 4,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 682132593740017,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "Men_Button",
+							"sid": 712435154665318,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"m2\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 959691049799041,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 897925638291989,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 954680577179220,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m2\"",
+										"property": "offsetX",
+										"end-value": "696",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 662846132985435
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 239033269032281,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 429645043281273,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m2\"",
+										"property": "offsetX",
+										"end-value": "680",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 456163404445218
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 345560552029893,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 952779307025840,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m2\"",
+										"property": "offsetX",
+										"end-value": "664",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 765566334765173
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Men_Button",
+									"sid": 666872544484150,
+									"parameters": {
+										"instance-variable": "menu",
+										"comparison": 0,
+										"value": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Men_Button",
+									"sid": 942307391352961,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"m2\"",
+										"property": "offsetX",
+										"end-value": "648",
+										"time": "0.25",
+										"ease": "easeoutbounce",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 605445208808344
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite5",
+					"sid": 498392750195950
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite5",
+					"sid": 890970997820061,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetWidth",
+						"end-value": "Self.Width+25",
+						"time": "0.25",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite5",
+					"sid": 164559685802889,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetHeight",
+						"end-value": "Self.Height+60",
+						"time": "0.25",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite5",
+					"sid": 292120956097646,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "0.25",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 601804931995702
+		},
+		{
+			"eventType": "comment",
+			"text": "bajar y subir en el menu"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 348314830383967,
+					"parameters": {
+						"name": "\"P1Up\""
+					}
+				},
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 564262226857319,
+					"parameters": {
+						"name": "\"P2Up\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 141573429173456,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 707042140353398
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 399719654090704,
+							"parameters": {
+								"variable": "Menu",
+								"comparison": 3,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 590052891344310,
+							"parameters": {
+								"audio-file": "Move1",
+								"loop": "not-looping",
+								"volume": "SFX",
+								"stereo-pan": "0",
+								"tag-optional": "\"RAB\""
+							}
+						},
+						{
+							"callFunction": "Titlecard",
+							"sid": 570861705947016
+						}
+					],
+					"sid": 658925684820477,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 886847167874214,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 5,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 545978138900458,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 3,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 315309697427142,
+									"parameters": {
+										"variable": "Menu",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 543200934817370
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 585940623352608,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 954821969179095,
+									"parameters": {
+										"variable": "Menu",
+										"value": "3"
+									}
+								}
+							],
+							"sid": 510343965730418
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 477830702083381
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 502219061591684,
+							"parameters": {
+								"variable": "Menu",
+								"comparison": 4,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 862287364136360,
+							"parameters": {
+								"audio-file": "Move1",
+								"loop": "not-looping",
+								"volume": "SFX",
+								"stereo-pan": "0",
+								"tag-optional": "\"RAB\""
+							}
+						}
+					],
+					"sid": 315528797087114,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 847896328910800,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 5,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 270299794388297,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 3,
+										"value": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 649322260873668,
+									"parameters": {
+										"variable": "Menu",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 532390364523986
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 436093701951661,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 2,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 470535507815039,
+									"parameters": {
+										"variable": "Menu",
+										"value": "8"
+									}
+								}
+							],
+							"sid": 212489642823666
+						}
+					]
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 801516027757152,
+					"parameters": {
+						"name": "\"P1Down\""
+					}
+				},
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 673737585354812,
+					"parameters": {
+						"name": "\"P2Down\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 653715779073891,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 393053631633711
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 722671462047236,
+							"parameters": {
+								"variable": "Menu",
+								"comparison": 3,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 722996400060621,
+							"parameters": {
+								"audio-file": "Move1",
+								"loop": "not-looping",
+								"volume": "SFX",
+								"stereo-pan": "0",
+								"tag-optional": "\"RAB\""
+							}
+						},
+						{
+							"callFunction": "Titlecard",
+							"sid": 401866665027252
+						}
+					],
+					"sid": 169965947788964,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 713253292423439,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 3,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 239295099336477,
+									"parameters": {
+										"variable": "Menu",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 354502650161920
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 345996259126711,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 271737797104300,
+									"parameters": {
+										"variable": "Menu",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 909449769100396
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 635850313127262
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 100349523164199,
+							"parameters": {
+								"variable": "Menu",
+								"comparison": 4,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 245496276270915,
+							"parameters": {
+								"audio-file": "Move1",
+								"loop": "not-looping",
+								"volume": "SFX",
+								"stereo-pan": "0",
+								"tag-optional": "\"RAB\""
+							}
+						}
+					],
+					"sid": 462080674560216,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 276287471451598,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 3,
+										"value": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 540405188962033,
+									"parameters": {
+										"variable": "Menu",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 940515866786580
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 312371125483936,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "9"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 477846194507378,
+									"parameters": {
+										"variable": "Menu",
+										"value": "5"
+									}
+								}
+							],
+							"sid": 288947042277806
+						}
+					]
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "comment",
+			"text": "cuando se oprime A dependiendo del valor de menu se elegirá una opcion "
+		},
+		{
+			"eventType": "comment",
+			"text": "la variable menu selected sirve para saber que estara en el menu secundario"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 483799600679990,
+					"parameters": {
+						"name": "\"P1A\""
+					}
+				},
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 232099534539591,
+					"parameters": {
+						"name": "\"P2A\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 246237969055391,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 520644299287811
+						}
+					],
+					"actions": [],
+					"sid": 114875136847150,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 239265960702003,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 482431340475612,
+									"parameters": {
+										"audio-file": "Select1",
+										"loop": "not-looping",
+										"volume": "SFX",
+										"stereo-pan": "0",
+										"tag-optional": "\"RAB\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 489481808137929,
+									"parameters": {
+										"variable": "Menu",
+										"value": "-1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "trans",
+									"sid": 153911216398807,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-192",
+										"time": "0.3",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 586767973444423,
+									"parameters": {
+										"seconds": "0.6"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 527069102360603,
+									"parameters": {
+										"layout": "Char Select screen"
+									}
+								}
+							],
+							"sid": 497236985153165
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 682148164290125,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 758773874247425,
+									"parameters": {
+										"variable": "MenuSelected",
+										"value": "2.9"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 920941121255653,
+									"parameters": {
+										"variable": "Menu",
+										"value": "5"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 707916108966526,
+									"parameters": {
+										"audio-file": "Select1",
+										"loop": "not-looping",
+										"volume": "SFX",
+										"stereo-pan": "0",
+										"tag-optional": "\"RAB\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 831524286669323,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 287229772469662,
+									"parameters": {
+										"variable": "MenuSelected",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 539271289829985
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 942711319504766,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 231282205889777,
+									"parameters": {
+										"variable": "MenuSelected",
+										"value": "2.9"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 970764357770588,
+									"parameters": {
+										"variable": "Menu",
+										"value": "5"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 539476766653249,
+									"parameters": {
+										"audio-file": "Select1",
+										"loop": "not-looping",
+										"volume": "SFX",
+										"stereo-pan": "0",
+										"tag-optional": "\"RAB\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 643406537867394,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 882363126842461,
+									"parameters": {
+										"variable": "MenuSelected",
+										"value": "2"
+									}
+								}
+							],
+							"sid": 222824639729939
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 113832899964994,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 788158666505931,
+									"parameters": {
+										"variable": "MenuSelected",
+										"value": "2.9"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 950573551615588,
+									"parameters": {
+										"variable": "Menu",
+										"value": "5"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 976947819621046,
+									"parameters": {
+										"audio-file": "Select1",
+										"loop": "not-looping",
+										"volume": "SFX",
+										"stereo-pan": "0",
+										"tag-optional": "\"RAB\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 546938176511761,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 151135324365523,
+									"parameters": {
+										"variable": "MenuSelected",
+										"value": "3"
+									}
+								}
+							],
+							"sid": 923411411680432
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 649327198574768,
+									"parameters": {
+										"variable": "MenuSelected",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 679853831227967,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 899526762156929,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 293285857519116,
+											"parameters": {
+												"variable": "Menu",
+												"value": "-1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 342117523967722,
+											"parameters": {
+												"audio-file": "Select1",
+												"loop": "not-looping",
+												"volume": "SFX",
+												"stereo-pan": "0",
+												"tag-optional": "\"RAB\""
+											}
+										},
+										{
+											"id": "tween-one-property",
+											"objectClass": "trans",
+											"sid": 791049655855642,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"\"",
+												"property": "offsetY",
+												"end-value": "-192",
+												"time": "0.3",
+												"ease": "default",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 366355737065130,
+											"parameters": {
+												"seconds": "0.6"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 965587717445102,
+											"parameters": {
+												"layout": "Control2"
+											}
+										}
+									],
+									"sid": 511819828805057
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 781965568239259,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "6"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 385543604285544,
+											"parameters": {
+												"variable": "Menu",
+												"value": "-1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 565860222987270,
+											"parameters": {
+												"audio-file": "Select1",
+												"loop": "not-looping",
+												"volume": "SFX",
+												"stereo-pan": "0",
+												"tag-optional": "\"RAB\""
+											}
+										},
+										{
+											"id": "tween-one-property",
+											"objectClass": "trans",
+											"sid": 623984956017595,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"\"",
+												"property": "offsetY",
+												"end-value": "-192",
+												"time": "0.3",
+												"ease": "default",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 555601842664487,
+											"parameters": {
+												"seconds": "0.6"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 830548355319104,
+											"parameters": {
+												"layout": "Control"
+											}
+										}
+									],
+									"sid": 996990046816106
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 187007214979158,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "7"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 309242881850303,
+											"parameters": {
+												"variable": "Menu",
+												"value": "-1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 549358805915555,
+											"parameters": {
+												"audio-file": "Select1",
+												"loop": "not-looping",
+												"volume": "SFX",
+												"stereo-pan": "0",
+												"tag-optional": "\"RAB\""
+											}
+										},
+										{
+											"id": "tween-one-property",
+											"objectClass": "trans",
+											"sid": 620483012712182,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"\"",
+												"property": "offsetY",
+												"end-value": "-192",
+												"time": "0.3",
+												"ease": "default",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 442581554204375,
+											"parameters": {
+												"seconds": "0.6"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 879048362325344,
+											"parameters": {
+												"layout": "credits"
+											}
+										}
+									],
+									"sid": 695005647161964
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 752093205894051,
+											"parameters": {
+												"variable": "Menu",
+												"comparison": 0,
+												"value": "8"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 274268912875894
+								}
+							]
+						}
+					]
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 368959977603895,
+					"parameters": {
+						"name": "\"P1B\""
+					}
+				},
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 658955390097122,
+					"parameters": {
+						"name": "\"P2B\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 799846464949190,
+					"parameters": {
+						"audio-file": "BACK",
+						"loop": "not-looping",
+						"volume": "SFX",
+						"stereo-pan": "0",
+						"tag-optional": "\"RAB\""
+					}
+				}
+			],
+			"sid": 176505745237451,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 977527431887698,
+							"parameters": {
+								"variable": "Menu",
+								"comparison": 5,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 686197268309681,
+							"parameters": {
+								"variable": "Menu",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 985515251268961
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-opacity",
+					"objectClass": "Sprite5",
+					"sid": 480799385704706,
+					"parameters": {
+						"comparison": 3,
+						"opacity": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite5",
+					"sid": 463306253159079
+				}
+			],
+			"sid": 722346511999360
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 272177938493874,
+					"parameters": {
+						"variable": "Menu",
+						"comparison": 5,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite6",
+					"sid": 439063364832340,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "450",
+						"time": "0.2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 180538530251151
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 636976810525175,
+					"parameters": {
+						"variable": "Menu",
+						"comparison": 2,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite6",
+					"sid": 285053619602947,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "32",
+						"time": "0.3",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 336585945183890
+		},
+		{
+			"functionName": "Titlecard",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "titlecard",
+					"sid": 407386776699623,
+					"parameters": {
+						"x": "408",
+						"y": "144"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "titlecard",
+					"sid": 891207311671844,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "titlecard",
+					"sid": 307081350031037,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"1\"",
+						"property": "offsetX",
+						"end-value": "340",
+						"time": "0.3",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "titlecard",
+					"sid": 695124993038536,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"1\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "0.3",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 128556247939585
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 278202849386592,
+					"parameters": {
+						"variable": "MenuSelected",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 449205634106918,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 736364822209436,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "37"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 815257024696567,
+							"parameters": {
+								"text": "\"Graficos\""
+							}
+						}
+					],
+					"sid": 651097164893345
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 700891705783468,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "39"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 600074523635164,
+							"parameters": {
+								"text": "\"Controles\""
+							}
+						}
+					],
+					"sid": 706420004332329
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 398892842431083,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "38"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 187801019657716,
+							"parameters": {
+								"text": "\"Creditos\""
+							}
+						}
+					],
+					"sid": 116900340362791
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 994515111726789,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "40"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 746347369037956,
+							"parameters": {
+								"text": "\"--\""
+							}
+						}
+					],
+					"sid": 945706078855367
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 959276356258996,
+					"parameters": {
+						"variable": "MenuSelected",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 227332996177677,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 785076635802456,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "37"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 760625698806711,
+							"parameters": {
+								"text": "\"Partida Rapida\""
+							}
+						}
+					],
+					"sid": 589299148158585
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 865391032068582,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "39"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 558148872477211,
+							"parameters": {
+								"text": "\"Competitivo\""
+							}
+						}
+					],
+					"sid": 279039146494583
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 138779193362661,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "38"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 172445398529163,
+							"parameters": {
+								"text": "\"Partida Privada\""
+							}
+						}
+					],
+					"sid": 792484457548912
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 534251520769070,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "40"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 369436581497038,
+							"parameters": {
+								"text": "\"--\""
+							}
+						}
+					],
+					"sid": 968855930202529
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 845243970822542,
+					"parameters": {
+						"variable": "MenuSelected",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 161949767589807,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 612130333840392,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "37"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 128285868731622,
+							"parameters": {
+								"text": "\"Historia\""
+							}
+						}
+					],
+					"sid": 947200463812058
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 216508397995419,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "39"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 399148663635594,
+							"parameters": {
+								"text": "\"Clasico\""
+							}
+						}
+					],
+					"sid": 942927262062410
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 560639477196845,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "38"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 332313966018860,
+							"parameters": {
+								"text": "\"All-Stars\""
+							}
+						}
+					],
+					"sid": 749402629935749
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 852800289585775,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "40"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 281817721115158,
+							"parameters": {
+								"text": "\"Modos Extra\""
+							}
+						}
+					],
+					"sid": 417844515515264
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Movil",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 873015006521487,
+							"parameters": {
+								"object": "Men_Button"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 940520424709674,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 562579908099688,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Men_Button",
+											"sid": 760939801091839,
+											"parameters": {
+												"instance-variable": "menu",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 865889009613473,
+											"parameters": {
+												"audio-file": "Select1",
+												"loop": "not-looping",
+												"volume": "SFX",
+												"stereo-pan": "0",
+												"tag-optional": "\"RAB\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 351616523578369,
+											"parameters": {
+												"variable": "Menu",
+												"value": "-1"
+											}
+										},
+										{
+											"id": "tween-one-property",
+											"objectClass": "trans",
+											"sid": 766344025053055,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"\"",
+												"property": "offsetY",
+												"end-value": "-192",
+												"time": "0.3",
+												"ease": "default",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 711590566199811,
+											"parameters": {
+												"seconds": "0.6"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 840164843771781,
+											"parameters": {
+												"layout": "Char Select screen"
+											}
+										}
+									],
+									"sid": 278981345823896
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Men_Button",
+											"sid": 817929517642975,
+											"parameters": {
+												"instance-variable": "menu",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 733769243935657,
+											"parameters": {
+												"variable": "MenuSelected",
+												"value": "2.9"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 909805555180013,
+											"parameters": {
+												"variable": "Menu",
+												"value": "5"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 272134339712217,
+											"parameters": {
+												"audio-file": "Select1",
+												"loop": "not-looping",
+												"volume": "SFX",
+												"stereo-pan": "0",
+												"tag-optional": "\"RAB\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 844187211352544,
+											"parameters": {
+												"seconds": "0.2"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 808390440060944,
+											"parameters": {
+												"variable": "MenuSelected",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 664671580000969
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Men_Button",
+											"sid": 181649179187762,
+											"parameters": {
+												"instance-variable": "menu",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 335510668804252,
+											"parameters": {
+												"variable": "MenuSelected",
+												"value": "2.9"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 554683504498382,
+											"parameters": {
+												"variable": "Menu",
+												"value": "5"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 129611916359532,
+											"parameters": {
+												"audio-file": "Select1",
+												"loop": "not-looping",
+												"volume": "SFX",
+												"stereo-pan": "0",
+												"tag-optional": "\"RAB\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 361653301571234,
+											"parameters": {
+												"seconds": "0.2"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 307138819545106,
+											"parameters": {
+												"variable": "MenuSelected",
+												"value": "2"
+											}
+										}
+									],
+									"sid": 205059084476482
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Men_Button",
+											"sid": 992477320025025,
+											"parameters": {
+												"instance-variable": "menu",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 975901395726690,
+											"parameters": {
+												"variable": "MenuSelected",
+												"value": "2.9"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 487508687866710,
+											"parameters": {
+												"variable": "Menu",
+												"value": "5"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 307152894495946,
+											"parameters": {
+												"audio-file": "Select1",
+												"loop": "not-looping",
+												"volume": "SFX",
+												"stereo-pan": "0",
+												"tag-optional": "\"RAB\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 715344204992242,
+											"parameters": {
+												"seconds": "0.2"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 455852172665493,
+											"parameters": {
+												"variable": "MenuSelected",
+												"value": "3"
+											}
+										}
+									],
+									"sid": 987600616975814
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 918382630005677,
+											"parameters": {
+												"variable": "MenuSelected",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 112186461625725,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Men_Button",
+													"sid": 944313062777147,
+													"parameters": {
+														"instance-variable": "menu",
+														"comparison": 0,
+														"value": "5"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 712190143309678,
+													"parameters": {
+														"variable": "Menu",
+														"value": "-1"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 179461817584510,
+													"parameters": {
+														"audio-file": "Select1",
+														"loop": "not-looping",
+														"volume": "SFX",
+														"stereo-pan": "0",
+														"tag-optional": "\"RAB\""
+													}
+												},
+												{
+													"id": "tween-one-property",
+													"objectClass": "trans",
+													"sid": 882043120897577,
+													"behaviorType": "Tween",
+													"parameters": {
+														"tags": "\"\"",
+														"property": "offsetY",
+														"end-value": "-192",
+														"time": "0.3",
+														"ease": "default",
+														"destroy-on-complete": "no",
+														"loop": "no",
+														"ping-pong": "no",
+														"repeat-count": "1"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 927043255497077,
+													"parameters": {
+														"seconds": "0.6"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 494753159022710,
+													"parameters": {
+														"layout": "Control2"
+													}
+												}
+											],
+											"sid": 573940562356323
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Men_Button",
+													"sid": 567711870143650,
+													"parameters": {
+														"instance-variable": "menu",
+														"comparison": 0,
+														"value": "6"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 902124527350310,
+													"parameters": {
+														"variable": "Menu",
+														"value": "-1"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 897436207919088,
+													"parameters": {
+														"audio-file": "Select1",
+														"loop": "not-looping",
+														"volume": "SFX",
+														"stereo-pan": "0",
+														"tag-optional": "\"RAB\""
+													}
+												},
+												{
+													"id": "tween-one-property",
+													"objectClass": "trans",
+													"sid": 129578037711038,
+													"behaviorType": "Tween",
+													"parameters": {
+														"tags": "\"\"",
+														"property": "offsetY",
+														"end-value": "-192",
+														"time": "0.3",
+														"ease": "default",
+														"destroy-on-complete": "no",
+														"loop": "no",
+														"ping-pong": "no",
+														"repeat-count": "1"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 942415966474365,
+													"parameters": {
+														"seconds": "0.6"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 281083229999065,
+													"parameters": {
+														"layout": "Control3"
+													}
+												}
+											],
+											"sid": 850576098096514
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Men_Button",
+													"sid": 974939515460224,
+													"parameters": {
+														"instance-variable": "menu",
+														"comparison": 0,
+														"value": "7"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 627581698961172,
+													"parameters": {
+														"variable": "Menu",
+														"value": "-1"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 650347818545899,
+													"parameters": {
+														"audio-file": "Select1",
+														"loop": "not-looping",
+														"volume": "SFX",
+														"stereo-pan": "0",
+														"tag-optional": "\"RAB\""
+													}
+												},
+												{
+													"id": "tween-one-property",
+													"objectClass": "trans",
+													"sid": 270091069590699,
+													"behaviorType": "Tween",
+													"parameters": {
+														"tags": "\"\"",
+														"property": "offsetY",
+														"end-value": "-192",
+														"time": "0.3",
+														"ease": "default",
+														"destroy-on-complete": "no",
+														"loop": "no",
+														"ping-pong": "no",
+														"repeat-count": "1"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 760629240737688,
+													"parameters": {
+														"seconds": "0.6"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 262788516416303,
+													"parameters": {
+														"layout": "credits"
+													}
+												}
+											],
+											"sid": 500814800391384
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-double-tap",
+							"objectClass": "Touch",
+							"sid": 624996668245383
+						},
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 410186482720184,
+							"parameters": {
+								"object": "Men_Button"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 224834156937161,
+							"parameters": {
+								"audio-file": "BACK",
+								"loop": "not-looping",
+								"volume": "SFX",
+								"stereo-pan": "0",
+								"tag-optional": "\"RAB\""
+							}
+						}
+					],
+					"sid": 333797223700763,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 551061058532691,
+									"parameters": {
+										"variable": "Menu",
+										"comparison": 5,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 475843595701817,
+									"parameters": {
+										"variable": "Menu",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 621225704052906
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 687891242245155,
+							"parameters": {
+								"object": "Men_Button"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 586235080628472,
+							"parameters": {
+								"variable": "Menu",
+								"value": "Men_Button.menu"
+							}
+						}
+					],
+					"sid": 363046913510468,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 490076039847596
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 193183116449857,
+									"parameters": {
+										"audio-file": "Move1",
+										"loop": "not-looping",
+										"volume": "SFX",
+										"stereo-pan": "0",
+										"tag-optional": "\"RAB\""
+									}
+								}
+							],
+							"sid": 290432434899125
+						}
+					]
+				}
+			],
+			"sid": 795366802255980
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 685170393359435,
+					"parameters": {
+						"key": 9
+					}
+				},
+				{
+					"id": "is-fullscreen",
+					"objectClass": "Browser",
+					"sid": 110758370235687,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 431939781335326,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Browser",
+					"sid": 117793467362486,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "auto"
+					}
+				}
+			],
+			"sid": 366737025162046
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 913155921742093,
+					"parameters": {
+						"key": 9
+					}
+				},
+				{
+					"id": "is-fullscreen",
+					"objectClass": "Browser",
+					"sid": 975154247730365
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 395122704520723,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "cancel-fullscreen",
+					"objectClass": "Browser",
+					"sid": 398493410087283
+				}
+			],
+			"sid": 636397704490085
+		}
+	],
+	"sid": 492262657060840
+}

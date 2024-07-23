@@ -1,0 +1,1201 @@
+{
+	"name": "SS",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 573034943062886
+				}
+			],
+			"actions": [],
+			"sid": 881184179291899,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-android",
+							"objectClass": "PlatformInfo",
+							"sid": 871826296761473
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 443221723809989,
+							"parameters": {
+								"group-name": "\"movil2\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 272637056201848
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-android",
+							"objectClass": "PlatformInfo",
+							"sid": 246090509393569,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 839157124119067,
+							"parameters": {
+								"group-name": "\"movil2\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 981581018143022
+				}
+			]
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Controls"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Hand",
+					"sid": 765863998865233,
+					"parameters": {
+						"instance-variable": "PLAYER",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 304178181711749,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 938466648360149,
+							"parameters": {
+								"name": "\"P1Up\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Hand",
+							"sid": 426818686866907,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 562844233316596,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 380163216644681,
+							"parameters": {
+								"name": "\"P1Down\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Hand",
+							"sid": 269005122244561,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 869811422897137,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 920681274466531,
+							"parameters": {
+								"name": "\"P1MoveL\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Hand",
+							"sid": 620677212003883,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 402610603623537,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 718777062268593,
+							"parameters": {
+								"name": "\"P1MoveR\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Hand",
+							"sid": 365698629889834,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 503554886512634,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 168684626150400,
+							"parameters": {
+								"gamepad": "C1-1",
+								"button": "button-a"
+							}
+						},
+						{
+							"id": "on-key-code-pressed",
+							"objectClass": "Keyboard",
+							"sid": 409908878411500,
+							"parameters": {
+								"keycode": "keys.At(KEY_A,K_KEYCODE)"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 700297610635161,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "SpriteFont",
+									"sid": 672181852007277,
+									"parameters": {
+										"unique-id": "300"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Hand",
+									"sid": 929373620184481,
+									"parameters": {
+										"object": "SpriteFont"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Hand",
+									"sid": 176504365230439
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "trans",
+									"sid": 409495863288709,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-192",
+										"time": "0.3",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 466136069406974,
+									"parameters": {
+										"seconds": "0.6"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 841321535945019,
+									"parameters": {
+										"layout": "Char Select screen"
+									}
+								}
+							],
+							"sid": 501619647424386
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Hand",
+									"sid": 507737641085788,
+									"parameters": {
+										"object": "StageImage"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "StageImage",
+									"sid": 750796787240952,
+									"parameters": {
+										"which": "nearest",
+										"x": "Hand.x",
+										"y": "Hand.Y"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "StageImage",
+									"sid": 641651218232497,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 5,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "StageImage",
+									"sid": 842470155138202,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "99"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 262625294505682,
+									"parameters": {
+										"variable": "STAGE",
+										"value": "StageImage.ID"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Hand",
+									"sid": 762351625283613
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "trans",
+									"sid": 381807767954738,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-192",
+										"time": "0.3",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 995925515413951,
+									"parameters": {
+										"seconds": "0.6"
+									}
+								},
+								{
+									"id": "go-to-layout-by-name",
+									"objectClass": "System",
+									"sid": 705261646551039,
+									"parameters": {
+										"layout": "\"Layout \"&STAGE"
+									}
+								}
+							],
+							"sid": 990437770233203
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Hand",
+									"sid": 355441159701797,
+									"parameters": {
+										"object": "StageImage"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "StageImage",
+									"sid": 647372348966679,
+									"parameters": {
+										"which": "nearest",
+										"x": "Hand.x",
+										"y": "Hand.Y"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "StageImage",
+									"sid": 837896685453456,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "99"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 396582878198069,
+									"parameters": {
+										"variable": "STAGE",
+										"value": "choose(0,1,2,3,4,5,6)"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Hand",
+									"sid": 680579286481656
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "trans",
+									"sid": 482955178454576,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-192",
+										"time": "0.3",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 794208389270929,
+									"parameters": {
+										"seconds": "0.6"
+									}
+								},
+								{
+									"id": "go-to-layout-by-name",
+									"objectClass": "System",
+									"sid": 248716123502684,
+									"parameters": {
+										"layout": "\"Layout \"&STAGE"
+									}
+								}
+							],
+							"sid": 170742776393245
+						}
+					],
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 993142556024193,
+					"parameters": {
+						"object": "StageImage"
+					}
+				},
+				{
+					"id": "pick-nearestfurthest",
+					"objectClass": "StageImage",
+					"sid": 945738954818349,
+					"parameters": {
+						"which": "nearest",
+						"x": "Hand.x",
+						"y": "Hand.Y"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Hand",
+					"sid": 978716368908814,
+					"parameters": {
+						"animation": "\"Point2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "StageImage",
+					"sid": 491070410458869,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "StageView",
+					"sid": 838224620884970,
+					"parameters": {
+						"animation": "\"Animation \"&StageImage.ID",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 342181834621506,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SpriteFont",
+							"sid": 794508727777140,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 338113096939768,
+							"parameters": {
+								"text": "StageImage.TEXT"
+							}
+						}
+					],
+					"sid": 748699827253370
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 154578149472319
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "StageView",
+							"sid": 711924633686351,
+							"behaviorType": "Tween",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "StageView",
+							"sid": 766326360138949,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"1\"",
+								"property": "offsetAngle",
+								"end-value": "355",
+								"time": "0.1",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "yes",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 705238174078972
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 141013248372052,
+					"parameters": {
+						"object": "StageImage"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "StageImage",
+					"sid": 593481940368565,
+					"parameters": {
+						"object": "Hand"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-active",
+					"objectClass": "StageImage",
+					"sid": 869209873116427,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "inactive"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "StageImage",
+					"sid": 104807093258573,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 166327409588997
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 387587143304083,
+					"parameters": {
+						"object": "StageImage"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 254613699236416,
+					"parameters": {
+						"object": "SpriteFont"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Hand",
+					"sid": 340936858122378,
+					"parameters": {
+						"animation": "\"Open\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 691881741834130
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Hand",
+					"sid": 884704254253242,
+					"parameters": {
+						"object": "SpriteFont"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Hand",
+					"sid": 124399968396403,
+					"parameters": {
+						"animation": "\"Point\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 834264466372841
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "StageView",
+					"sid": 829031391494932,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "StageView",
+					"sid": 852257889263765,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"2\"",
+						"property": "offsetAngle",
+						"end-value": "5",
+						"time": "0.1",
+						"ease": "easeoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 780820825223504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "StageView",
+					"sid": 639732752724766,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "StageView",
+					"sid": 657050292726677,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"3\"",
+						"property": "offsetAngle",
+						"end-value": "0",
+						"time": "0.1",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 418983155786955
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "movil2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-in-touch",
+							"objectClass": "Touch",
+							"sid": 118694249804526
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Hand",
+							"sid": 162575474876835,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "movecursor",
+							"sid": 815298342928889,
+							"parameters": {
+								"x": "Touch.X",
+								"y": "Touch.Y"
+							}
+						}
+					],
+					"sid": 176157452620060
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 167904011215896,
+							"parameters": {
+								"object": "SpriteFont",
+								"type": "start"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont",
+							"sid": 204035949196757,
+							"parameters": {
+								"unique-id": "300"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "movecursor",
+							"sid": 250312197702878,
+							"parameters": {
+								"object": "SpriteFont"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "movecursor",
+							"sid": 660176247709918
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "trans",
+							"sid": 510366799271988,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "-192",
+								"time": "0.3",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 428088704751900,
+							"parameters": {
+								"seconds": "0.6"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 678095021164795,
+							"parameters": {
+								"layout": "Char Select screen"
+							}
+						}
+					],
+					"sid": 605214441898025
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-double-tap-object",
+							"objectClass": "Touch",
+							"sid": 103729504519120,
+							"parameters": {
+								"object": "StageImage"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "movecursor",
+							"sid": 462848515864947,
+							"parameters": {
+								"object": "StageImage"
+							}
+						},
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "StageImage",
+							"sid": 469810270291975,
+							"parameters": {
+								"which": "nearest",
+								"x": "movecursor.x",
+								"y": "movecursor.Y"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "StageImage",
+							"sid": 716071278620551,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 5,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "StageImage",
+							"sid": 730962045190876,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "99"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 445610248547849,
+							"parameters": {
+								"variable": "STAGE",
+								"value": "StageImage.ID"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "movecursor",
+							"sid": 702017206950992
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "trans",
+							"sid": 611391547646255,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "-192",
+								"time": "0.3",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 422282923520741,
+							"parameters": {
+								"seconds": "0.6"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 979888927841501,
+							"parameters": {
+								"layout": "\"Layout \"&STAGE"
+							}
+						}
+					],
+					"sid": 200267780405049
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-double-tap-object",
+							"objectClass": "Touch",
+							"sid": 289846847169985,
+							"parameters": {
+								"object": "StageImage"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "movecursor",
+							"sid": 789916097366313,
+							"parameters": {
+								"object": "StageImage"
+							}
+						},
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "StageImage",
+							"sid": 226675495720311,
+							"parameters": {
+								"which": "nearest",
+								"x": "movecursor.x",
+								"y": "movecursor.Y"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "StageImage",
+							"sid": 931928631406734,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "99"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 986242385324910,
+							"parameters": {
+								"variable": "STAGE",
+								"value": "choose(0,1,2,3,4,5)"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "movecursor",
+							"sid": 261729841314474
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "trans",
+							"sid": 610485858386552,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "-192",
+								"time": "0.3",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 885151881565607,
+							"parameters": {
+								"seconds": "0.6"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 744198847329615,
+							"parameters": {
+								"layout": "\"Layout \"&STAGE"
+							}
+						}
+					],
+					"sid": 346653374979939
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "movecursor",
+							"sid": 981164491793457,
+							"parameters": {
+								"object": "StageImage"
+							}
+						},
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "StageImage",
+							"sid": 504498381418940,
+							"parameters": {
+								"which": "nearest",
+								"x": "movecursor.x",
+								"y": "movecursor.Y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "StageImage",
+							"sid": 192801784101832,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "StageView",
+							"sid": 841293944772497,
+							"parameters": {
+								"animation": "\"Animation \"&StageImage.ID",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 368504453871448,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "SpriteFont",
+									"sid": 541355769795725,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "SpriteFont",
+									"sid": 362354749908090,
+									"parameters": {
+										"text": "StageImage.TEXT"
+									}
+								}
+							],
+							"sid": 760895608620766
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 490041724915103
+								},
+								{
+									"id": "is-any-playing",
+									"objectClass": "StageView",
+									"sid": 757509109024671,
+									"behaviorType": "Tween",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "StageView",
+									"sid": 574141865931871,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"1\"",
+										"property": "offsetAngle",
+										"end-value": "355",
+										"time": "0.1",
+										"ease": "easeinsine",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "yes",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 252666289062655
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 199671041227855,
+							"parameters": {
+								"object": "StageImage"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "StageImage",
+							"sid": 401960328324829,
+							"parameters": {
+								"object": "movecursor"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "StageImage",
+							"sid": 993127571540593,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "StageImage",
+							"sid": 641599654869030,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 773874328332858
+				}
+			],
+			"sid": 880685301863515
+		}
+	],
+	"sid": 807023192483227
+}

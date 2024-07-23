@@ -1,0 +1,21 @@
+{
+	"name": "Particle_rain",
+	"plugin-id": "Particles",
+	"sid": 641103648462629,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 5,
+		"height": 7,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7793124,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

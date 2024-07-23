@@ -1,0 +1,219 @@
+{
+	"name": "Event sheet 4",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 196396874911957
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 529880340806463
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 634981111238535,
+					"parameters": {
+						"audio-file": "EASTER",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 672695319396495,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "SpriteFont2",
+							"sid": 150250119293324,
+							"parameters": {
+								"unique-id": "1045"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SpriteFont2",
+							"sid": 655158741816879,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "choose(0,1,2,3,4,5)"
+							}
+						}
+					],
+					"sid": 279882716426701
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "SpriteFont2",
+					"sid": 249708962427922,
+					"parameters": {
+						"instance-variable": "ID",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont2",
+					"sid": 199061415037902,
+					"parameters": {
+						"text": "\"NO DEBERIAS ESTAR AQUI\""
+					}
+				}
+			],
+			"sid": 899838952053166
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "SpriteFont2",
+					"sid": 467715082705798,
+					"parameters": {
+						"instance-variable": "ID",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont2",
+					"sid": 152923860528066,
+					"parameters": {
+						"text": "\"LA DIVERSION ES INFINITA\""
+					}
+				}
+			],
+			"sid": 998945773691317
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "SpriteFont2",
+					"sid": 244216044269509,
+					"parameters": {
+						"instance-variable": "ID",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont2",
+					"sid": 917214759208345,
+					"parameters": {
+						"text": "\"EL PROXIMO PERSONAJE JUGABLE SIEMPRE SONRIE, EXCEPTO EN EL VACIO\""
+					}
+				}
+			],
+			"sid": 494536235394226
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "SpriteFont2",
+					"sid": 750998261429863,
+					"parameters": {
+						"instance-variable": "ID",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont2",
+					"sid": 294838165562241,
+					"parameters": {
+						"text": "\"EL PROXIMO PERSONAJE JUGABLE ES UN CAOS DISFRAZADO DE ANIMAL DOMESTICO\""
+					}
+				}
+			],
+			"sid": 271048769148860
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "SpriteFont2",
+					"sid": 727121558950777,
+					"parameters": {
+						"instance-variable": "ID",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont2",
+					"sid": 749265296312437,
+					"parameters": {
+						"text": "\"EL PROX ESCENARIO SE RELACIONA CON GRANDES BLOQUES DE HIELO\""
+					}
+				}
+			],
+			"sid": 586799728916170
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "SpriteFont2",
+					"sid": 418717967669516,
+					"parameters": {
+						"instance-variable": "ID",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont2",
+					"sid": 488921416078895,
+					"parameters": {
+						"text": "\"NO BUSQUES MAS SECRETOS, ES POR TU BIEN\""
+					}
+				}
+			],
+			"sid": 376132207006564
+		}
+	],
+	"sid": 391585271171373
+}

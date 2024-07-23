@@ -1,0 +1,26 @@
+{
+	"name": "Particles",
+	"plugin-id": "Particles",
+	"sid": 350701430014142,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "alphaclamp2",
+			"name": "AlphaClamp"
+		}
+	],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 756562,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

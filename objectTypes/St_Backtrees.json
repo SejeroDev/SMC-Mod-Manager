@@ -1,0 +1,54 @@
+{
+	"name": "St_Backtrees",
+	"plugin-id": "Sprite",
+	"sid": 713245730463467,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1460,
+						"height": 600,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1450916,
+						"collisionPoly": {
+							"points": [
+								0.1232876712328767,
+								0.11333333333333333,
+								0.8883561643835617,
+								0.24,
+								0.9232876712328767,
+								0.3616666666666667,
+								0.8904109589041096,
+								1,
+								0.06780821917808219,
+								1,
+								0.019178082191780823,
+								0.49333333333333335
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 825538352994234,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

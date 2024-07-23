@@ -1,0 +1,76 @@
+{
+	"name": "SpriteFont3",
+	"plugin-id": "Spritefont2",
+	"sid": 625984472861662,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "menu",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 670258104402391
+		},
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 328916330667964
+		},
+		{
+			"name": "PLAYER",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 119423505310550
+		},
+		{
+			"name": "ox",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 783647561591518
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 733372217557751
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 248021254598575
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 301916277707376
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 579578800313982
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4840630,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

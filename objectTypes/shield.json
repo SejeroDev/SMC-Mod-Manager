@@ -1,0 +1,59 @@
+{
+	"name": "shield",
+	"plugin-id": "Sprite",
+	"sid": 473364713397015,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TAMAÑO",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 238219987009350
+		},
+		{
+			"name": "PLAYER",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 430783348852224
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 626864759326177
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3430116,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 243059147611195,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

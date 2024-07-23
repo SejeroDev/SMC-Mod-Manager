@@ -1,0 +1,60 @@
+{
+	"name": "teleporter2",
+	"plugin-id": "Sprite",
+	"sid": 764097284886644,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 390472340455710
+		},
+		{
+			"name": "TX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 335089551148638
+		},
+		{
+			"name": "TY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 444827844022514
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 630294,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 249799370107736,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

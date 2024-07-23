@@ -1,0 +1,15 @@
+{
+	"name": "buttons",
+	"plugin-id": "Sprite",
+	"sid": 242234818120851,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Button",
+		"ButtonD",
+		"ButtonL",
+		"ButtonR",
+		"ButtonU"
+	]
+}
